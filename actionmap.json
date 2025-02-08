@@ -1,0 +1,16 @@
+{
+        "actionmap":[
+                {
+                        "action":"print",
+                        "match": [
+                                "center",
+                                "",
+                                "press"
+                        ],
+                        "fixed":{
+                                "data": "value"
+                        }
+
+                }
+        ]
+}

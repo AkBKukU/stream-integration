@@ -1,0 +1,16 @@
+{
+        "actionmap":[
+                {
+                        "action":"play_file",
+                        "match": [
+                                "center",
+                                "",
+                                "press"
+                        ],
+                        "fixed":{
+                                "filepath": "stream/sound/440Hz-30s.wav"
+                        }
+
+                }
+        ]
+}

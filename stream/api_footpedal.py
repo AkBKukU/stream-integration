@@ -26,7 +26,7 @@ class APIfootpedal(APIbase):
         self.dev = hid.device()
         self.dev.open(self.vid, self.pid)
 
-        print ("footpedal active")
+        print ("Footpedal active")
         self.delay_callback("check_input", 1000, self.check_input)
 
     async def disconnect(self):
@@ -35,11 +35,9 @@ class APIfootpedal(APIbase):
 
     async def check_input(self):
 
-        print ("footpedal read")
         self.delay_callback("check_input", 1100, self.check_input)
         r=self.dev.read(10,1000)
         if len(r) > 1:
-            print ("read=",r[0])
             if not self.left and (r[0] & 0b1) > 0:
                 print("Left Pressed")
                 # Send data to receivers
@@ -91,7 +89,6 @@ class APIfootpedal(APIbase):
 
             await self.cancel_delay("check_input")
             self.delay_callback("check_input", 1, self.check_input)
-        print ("footpedal over")
 
 
     def test(self):
