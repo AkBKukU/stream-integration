@@ -1,12 +1,19 @@
 #!/usr/bin/python3
 from stream.api_base import APIbase
+try:
+    from twitchAPI.twitch import Twitch
+    from twitchAPI.pubsub import PubSub
+    from twitchAPI.helper import first
+    from twitchAPI.oauth import UserAuthenticationStorageHelper
+    from twitchAPI.type import AuthScope
+    from twitchAPI.chat import Chat, ChatMessage, ChatEvent
+except:
+    print("No Twitch API")
+    class ChatMessage(object):
 
-from twitchAPI.twitch import Twitch
-from twitchAPI.pubsub import PubSub
-from twitchAPI.helper import first
-from twitchAPI.oauth import UserAuthenticationStorageHelper
-from twitchAPI.type import AuthScope
-from twitchAPI.chat import Chat, ChatMessage, ChatEvent
+        def __init__(self):
+            self.totally_real_member = 0
+
 
 from pprint import pprint
 import asyncio
