@@ -5,6 +5,7 @@
 #from stream.output_dectalk import OUTDectalk
 #from stream.output_call import OUTCall
 from stream.output_sound import OUTSound
+from stream.output_json import OUTJson
 
 
 # Test Imports
@@ -58,6 +59,8 @@ outtest = OUTDectalk()
 outtest.actionmap_load("actionmap.json")
 outsound = OUTSound()
 outsound.actionmap_load("actionmap_sound.json")
+jsdata = OUTJson()
+jsdata.actionmap_load("actionmap_json.json")
 footpedal = APIfootpedal(vid = 0x05f3,pid = 0x00FF)
 #outcall = OUTCall("192.168.1.219")
 http = APIhttp()
@@ -81,6 +84,7 @@ http = APIhttp()
 #youtube.register_chat(http.receive_chat)
 footpedal.register_interact(outsound.receive_action)
 footpedal.register_interact(outtest.receive_action)
+footpedal.register_interact(jsdata.receive_action)
 
 # Start non async
 #http.connect()

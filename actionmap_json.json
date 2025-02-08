@@ -1,0 +1,30 @@
+{
+        "actionmap":[
+                {
+                        "action":"output",
+                        "match": [
+                                "right",
+                                "",
+                                "press"
+                        ],
+                        "fixed":{
+                                "filepath": "/tmp/gpib_control.json",
+                                "data": {"pause":true}
+                        }
+
+                },
+                {
+                        "action":"output",
+                        "match": [
+                                "right",
+                                "",
+                                "release"
+                        ],
+                        "fixed":{
+                                "filepath": "/tmp/gpib_control.json",
+                                "data": {"pause":false}
+                        }
+
+                }
+        ]
+}
