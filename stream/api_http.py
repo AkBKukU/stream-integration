@@ -374,8 +374,6 @@ class APIhttp(APIbase):
 
         # Web display data
         data["text"] = bleach.clean(data["text"],tags={})
-        data["test"] = data["test"].replace("arch","")
-        data["test"] = data["test"].replace("Arch","")
         self.chat.append(data)
         if self.poll_vote(data["from"], data["text"].lower().strip()) == "hide":
             return

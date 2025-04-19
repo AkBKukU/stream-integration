@@ -2,7 +2,7 @@
 from stream.api_base import APIbase
 try:
     from twitchAPI.twitch import Twitch
-    from twitchAPI.pubsub import PubSub
+    #from twitchAPI.pubsub import PubSub
     from twitchAPI.helper import first
     from twitchAPI.oauth import UserAuthenticationStorageHelper
     from twitchAPI.type import AuthScope
@@ -45,6 +45,7 @@ class APItwitch(APIbase):
         self.api = await Twitch(self.client_id, self.client_secret)
 
         # Scope for API to allow reading different data types
+        #TODO - Update Scopes
         target_scope = [
             AuthScope.CHANNEL_READ_REDEMPTIONS,
             AuthScope.BITS_READ,
@@ -64,16 +65,16 @@ class APItwitch(APIbase):
         self.user = await first(self.api.get_users(logins=['TechTangents']))
 
         # Starting up PubSub
-        self.pubsub = PubSub(self.api)
-        self.pubsub.start()
+        #self.pubsub = PubSub(self.api)
+        #self.pubsub.start()
 
         # Get chat interface
         self.chat = await Chat(self.api, initial_channel=['TechTangents'])
 
         # Register callbacks for pubsub actions
-        self.uuid_points = await self.pubsub.listen_channel_points(self.user.id, self.callback_points)
-        self.uuid_bits = await self.pubsub.listen_bits(self.user.id, self.callback_bits)
-        self.uuid_subs = await self.pubsub.listen_channel_subscriptions(self.user.id, self.callback_subs)
+        #self.uuid_points = await self.pubsub.listen_channel_points(self.user.id, self.callback_points)
+        #self.uuid_bits = await self.pubsub.listen_bits(self.user.id, self.callback_bits)
+        #self.uuid_subs = await self.pubsub.listen_channel_subscriptions(self.user.id, self.callback_subs)
 
 
         self.chat.register_event(ChatEvent.MESSAGE, self.callback_chat)
@@ -115,10 +116,10 @@ class APItwitch(APIbase):
         """Gracefully disconnect from Twith API"""
 
         # End pubsub connections
-        await self.pubsub.unlisten(self.uuid_points)
-        await self.pubsub.unlisten(self.uuid_bits)
-        await self.pubsub.unlisten(self.uuid_subs)
-        self.pubsub.stop()
+        #await self.pubsub.unlisten(self.uuid_points)
+       # await self.pubsub.unlisten(self.uuid_bits)
+       # await self.pubsub.unlisten(self.uuid_subs)
+       # self.pubsub.stop()
 
         # End chat
         self.chat.stop()
