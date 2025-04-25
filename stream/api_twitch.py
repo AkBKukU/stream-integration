@@ -2,10 +2,10 @@
 from stream.api_base import APIbase
 try:
     from twitchAPI.twitch import Twitch
-    from twitchAPI.eventsub import EventSub
+    from twitchAPI.eventsub.websocket import EventSubWebsocket
+    from twitchAPI.type import AuthScope
     from twitchAPI.helper import first
     from twitchAPI.oauth import UserAuthenticationStorageHelper
-    from twitchAPI.type import AuthScope
     from twitchAPI.chat import Chat, ChatMessage, ChatEvent
 except:
     print("No Twitch API")
@@ -65,14 +65,16 @@ class APItwitch(APIbase):
         self.user = await first(self.api.get_users(logins=['TechTangents']))
 
         # Starting up EventSub
-        #self.eventsub = EventSub(self.api)
-        #self.eventsub.start()
+        self.eventsub = EventSubWebsocket(self.api)
+        self.eventsub.start()
 
         # Get chat interface
         self.chat = await Chat(self.api, initial_channel=['TechTangents'])
 
         # Register callbacks for pubsub actions
-        #self.uuid_points = await self.pubsub.listen_channel_subscription_message(self.user.id, self.callback_points)
+        self.uuid_points = await self.eventsub.listen_channel_subscription_message(self.user.id, self.callback_subscription_message)
+        self.uuid_points = await self.eventsub.listen_channel_subscribe(self.user.id, self.callback_channel_subscribe)
+        self.uuid_points = await self.eventsub.listen_channel_subscription_gift(self.user.id, self.callback_subscription_gift)
         #self.uuid_bits = await self.pubsub.listen_bits(self.user.id, self.callback_bits)
         #self.uuid_subs = await self.pubsub.listen_channel_subscriptions(self.user.id, self.callback_subs)
 
@@ -149,6 +151,12 @@ class APItwitch(APIbase):
 
     async def callback_chat(self, chat: ChatMessage):
 
+        chat_data = {}
+        chat_data["text"] = chat.text
+        chat_data["emotes"] = chat.emotes
+        chat_data["bits"] = chat.bits
+        chat_data["sent_timestamp"] = chat.sent_timestamp
+        self.log("callback_chat_data",json.dumps(chat_data))
         if chat.user.color == None:
              # Create random colors from names
             color="#"
@@ -166,7 +174,6 @@ class APItwitch(APIbase):
                 "donate": chat.bits
             }
 
-        self.log("callback_chat",json.dumps(message))
         if chat.user.mod or chat.user.display_name == "TechTangents":
             print("Mod chat: "+message["text"][0:1])
             if message["text"][0:1] == "!":
@@ -189,17 +196,18 @@ class APItwitch(APIbase):
                             )
         return
 
-    async def message_prep(message_data):
+    def message_prep(self,message_data):
 
-        # https://static-cdn.jtvnw.net/emoticons/v1/$EMOTE_ID/1.0
+        # https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_d13b51bc41cb4b91a08bbcac18f28395/default/dark/1.0
 
         message_html = message_data.text
 
         return message_html
 
-    async def sub_prep(event_data):
-
+    def sub_prep(self,event_data):
+        # Applies to all
         line = event_data.user_name
+
         # Get plain english version of sub level
         sub_type=""
         if (str(event_data.tier) == "1000"):
@@ -213,25 +221,69 @@ class APItwitch(APIbase):
 
         sub_len=""
         if hasattr(event_data, "cumulative_months"):
+            # Only: Channel Subscription Message
             sub_len="for "+str(int(event_data.cumulative_months))+" months"
         else:
-            sub_len="for the first time"
+            # Only: Channel Subscribe
+            line += " as "+sub_type+" for the first time"
+            return line
 
-
-        if hasattr(event_data, "total") or (hasattr(event_data, "is_gift") and event_data.is_gift):
+        # Only: Channel Subscription Gift
+        if hasattr(event_data, "total"):
             #gift sub
+            line += " gave "+sub_type+" subs to "+event_data.total+" viewers "
         elif hasattr(event_data, "message"):
-            # self sub
-            line += " subbed as "+sub_type+" "+sub_len+" and says "+self.sub_prep(data.event)
+            # Only: Channel Subscription Message
+            line += " subbed as "+sub_type+" "+sub_len+" and says "+self.message_prep(data.event)
         return line
 
-    async def callback_subscription_message(data):
+
+    async def callback_channel_subscribe(self,data):
         # https://pytwitchapi.dev/en/stable/modules/twitchAPI.object.eventsub.html#twitchAPI.object.eventsub.ChannelSubscriptionMessageEvent
 
-        self.emit_donate(data.event.user_name,
-                            str(data.event.tier)+"s",
-                            self.sub_prep(data.event)
-                            )
+        ## Triggers
+        # First time subs
+        # Resubs (sometimes?) - Need to filter
+
+
+        self.log("callback_channel_subscribe",json.dumps(data.to_dict()))
+
+        if data.event.is_gift:
+            # Exit if this is a gift sub to prefer the gift callback only
+            return
+
+        # self.emit_donate(data.event.user_name,
+        #                     str(data.event.tier)+"s",
+        #                     self.sub_prep(data.event)
+        #                     )
+
+    async def callback_subscription_gift(self,data):
+        # https://pytwitchapi.dev/en/stable/modules/twitchAPI.object.eventsub.html#twitchAPI.object.eventsub.ChannelSubscriptionMessageEvent
+
+
+        ## Triggers
+        # Gift subs
+
+        self.log("callback_subscription_gift",json.dumps(data.to_dict()))
+
+        # self.emit_donate(data.event.user_name,
+        #                     str(data.event.tier)+"s",
+        #                     self.sub_prep(data.event)
+        #                     )
+
+
+    async def callback_subscription_message(self,data):
+        # https://pytwitchapi.dev/en/stable/modules/twitchAPI.object.eventsub.html#twitchAPI.object.eventsub.ChannelSubscriptionMessageEvent
+
+        ## Triggers
+        # Resubs
+
+        self.log("callback_subscription_message",json.dumps(data.to_dict()))
+
+        # self.emit_donate(data.event.user_name,
+        #                     str(data.event.tier)+"s",
+        #                     self.sub_prep(data.event)
+        #                     )
 
     async def callback_flush_subs(self):
 
