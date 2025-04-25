@@ -2,7 +2,7 @@
 from stream.api_base import APIbase
 try:
     from twitchAPI.twitch import Twitch
-    #from twitchAPI.pubsub import PubSub
+    from twitchAPI.eventsub import EventSub
     from twitchAPI.helper import first
     from twitchAPI.oauth import UserAuthenticationStorageHelper
     from twitchAPI.type import AuthScope
@@ -64,15 +64,15 @@ class APItwitch(APIbase):
         # Get user for channel to watch
         self.user = await first(self.api.get_users(logins=['TechTangents']))
 
-        # Starting up PubSub
-        #self.pubsub = PubSub(self.api)
-        #self.pubsub.start()
+        # Starting up EventSub
+        #self.eventsub = EventSub(self.api)
+        #self.eventsub.start()
 
         # Get chat interface
         self.chat = await Chat(self.api, initial_channel=['TechTangents'])
 
         # Register callbacks for pubsub actions
-        #self.uuid_points = await self.pubsub.listen_channel_points(self.user.id, self.callback_points)
+        #self.uuid_points = await self.pubsub.listen_channel_subscription_message(self.user.id, self.callback_points)
         #self.uuid_bits = await self.pubsub.listen_bits(self.user.id, self.callback_bits)
         #self.uuid_subs = await self.pubsub.listen_channel_subscriptions(self.user.id, self.callback_subs)
 
@@ -119,7 +119,7 @@ class APItwitch(APIbase):
         #await self.pubsub.unlisten(self.uuid_points)
        # await self.pubsub.unlisten(self.uuid_bits)
        # await self.pubsub.unlisten(self.uuid_subs)
-       # self.pubsub.stop()
+        self.eventsub.stop()
 
         # End chat
         self.chat.stop()
@@ -162,7 +162,7 @@ class APItwitch(APIbase):
         message={
                 "from": chat.user.display_name,
                 "color": color,
-                "text": chat.text,
+                "text": self.message_prep(chat),
                 "donate": chat.bits
             }
 
@@ -189,17 +189,49 @@ class APItwitch(APIbase):
                             )
         return
 
+    async def message_prep(message_data):
 
-    async def callback_subs(self, uuid: UUID, data: dict):
-        if str(data['context']) !=  "subgift":
-            await self.callback_sub_single("1337",data)
-            return
+        # https://static-cdn.jtvnw.net/emoticons/v1/$EMOTE_ID/1.0
 
-        if "sub_buffer" in self.tasks.keys():
-            await self.cancel_delay("sub_buffer")
-        self.buffer_subs.append(data)
+        message_html = message_data.text
 
-        self.delay_callback("sub_buffer", self.sub_coalesce_delay, self.callback_flush_subs)
+        return message_html
+
+    async def sub_prep(event_data):
+
+        line = event_data.user_name
+        # Get plain english version of sub level
+        sub_type=""
+        if (str(event_data.tier) == "1000"):
+            sub_type="tier one"
+        if (str(event_data.tier) == "2000"):
+            sub_type="tier two"
+        if (str(event_data.tier) == "3000"):
+            sub_type="tier three"
+        if (str(event_data.tier) == "Prime"):
+            sub_type="prime"
+
+        sub_len=""
+        if hasattr(event_data, "cumulative_months"):
+            sub_len="for "+str(int(event_data.cumulative_months))+" months"
+        else:
+            sub_len="for the first time"
+
+
+        if hasattr(event_data, "total") or (hasattr(event_data, "is_gift") and event_data.is_gift):
+            #gift sub
+        elif hasattr(event_data, "message"):
+            # self sub
+            line += " subbed as "+sub_type+" "+sub_len+" and says "+self.sub_prep(data.event)
+        return line
+
+    async def callback_subscription_message(data):
+        # https://pytwitchapi.dev/en/stable/modules/twitchAPI.object.eventsub.html#twitchAPI.object.eventsub.ChannelSubscriptionMessageEvent
+
+        self.emit_donate(data.event.user_name,
+                            str(data.event.tier)+"s",
+                            self.sub_prep(data.event)
+                            )
 
     async def callback_flush_subs(self):
 
@@ -238,17 +270,6 @@ class APItwitch(APIbase):
     async def callback_sub_single(self, uuid: UUID, data: dict):
         """Subscription handler"""
         self.log("callback_subs",json.dumps(data))
-
-        # Get plain english version of sub level
-        sub_type=""
-        if (str(data['sub_plan']) == "1000"):
-            sub_type="tier one"
-        if (str(data['sub_plan']) == "2000"):
-            sub_type="tier two"
-        if (str(data['sub_plan']) == "3000"):
-            sub_type="tier three"
-        if (str(data['sub_plan']) == "Prime"):
-            sub_type="prime"
 
         # Determine length of sub
         sub_len=""
