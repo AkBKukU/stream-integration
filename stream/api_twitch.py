@@ -309,7 +309,7 @@ class APItwitch(APIbase):
         #                     str(data.event.tier)+"s",
         #                     self.sub_prep(data.event)
         #                     )
-        sub_types = ["sub","resub","sub_gift","community_sub_gift","gift_paid_upgrade","prime_paid_upgrade","announcement"]
+        sub_types = ["sub","resub","sub_gift","community_sub_gift","gift_paid_upgrade","prime_paid_upgrade","pay_it_forward"]
 
         if data.event.notice_type in sub_types:
 
@@ -324,6 +324,19 @@ class APItwitch(APIbase):
                              data.event.system_message
                              )
 
+        announce_types = ["announcement","raid"]
+
+        if data.event.notice_type in announce_types:
+
+            if data.event.message.text != "":
+                self.emit_donate(data.event.chatter_user_name,
+                             str(1)+"s",
+                             data.event.message.text
+                             )
+            else:
+                self.emit_donate(data.event.chatter_user_name,
+                             str(1),
+                             data.event.system_message
 
 
     async def callback_flush_subs(self):
