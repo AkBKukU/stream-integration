@@ -335,7 +335,7 @@ class APItwitch(APIbase):
                              )
             else:
                 self.emit_donate(data.event.chatter_user_name,
-                             str(1),
+                             str(1)+"s",
                              data.event.system_message
                              )
 
