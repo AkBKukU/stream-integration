@@ -337,6 +337,7 @@ class APItwitch(APIbase):
                 self.emit_donate(data.event.chatter_user_name,
                              str(1),
                              data.event.system_message
+                             )
 
 
     async def callback_flush_subs(self):
