@@ -373,7 +373,10 @@ class APIhttp(APIbase):
             output.write(json.dumps(self.api_chat))
 
         # Web display data
-        data["text"] = bleach.clean(data["text"],tags={})
+        if "clean" in data and data["clean"] == True:
+            print("HTML preformatted message recieved")
+        else:
+            data["text"] = bleach.clean(data["text"],tags={})
         self.chat.append(data)
         if self.poll_vote(data["from"], data["text"].lower().strip()) == "hide":
             return

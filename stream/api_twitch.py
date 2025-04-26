@@ -21,6 +21,7 @@ from uuid import UUID
 import json
 from pathlib import PurePath
 import glob, os
+import bleach
 
 
 class APItwitch(APIbase):
@@ -175,7 +176,8 @@ class APItwitch(APIbase):
                 "from": chat.user.display_name,
                 "color": color,
                 "text": self.message_prep(chat),
-                "donate": chat.bits
+                "donate": chat.bits,
+                "clean": True
             }
 
         if chat.bits > 0:
@@ -210,10 +212,20 @@ class APItwitch(APIbase):
     def message_prep(self,message_data):
 
         # https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_d13b51bc41cb4b91a08bbcac18f28395/default/dark/1.0
+        pprint(message_data.emotes)
+        emote_replace = {}
 
-        message_html = message_data.text
+        if message_data.emotes is not None:
+            for emote_id, emote_pos in message_data.emotes.items():
+                emote_replace[emote_id] = message_data.text[int(emote_pos[0]["start_position"]):int(emote_pos[0]["end_position"])+1]
 
-        return message_html
+        text = bleach.clean(message_data.text,tags={})
+
+        if len(emote_replace) > 0:
+            for emote_id, emote_text in emote_replace.items():
+                text = text.replace(emote_text,f"<img src=\"https://static-cdn.jtvnw.net/emoticons/v2/{emote_id}/default/dark/1.0\"/>")
+
+        return text
 
     def sub_prep(self,event_data):
         # Applies to all
