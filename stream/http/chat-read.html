@@ -28,8 +28,8 @@ function json_read(chat_data)
 
         var text = document.createElement("span");
         text.innerHTML = ": " + c['text'];
-	text.innerHTML = text.innerHTML.replace(/(http:\/\/[^\s]+)/g, "<a target='_new' href='$1'>$1</a>");
-	text.innerHTML = text.innerHTML.replace(/(https:\/\/[^\s]+)/g, "<a target='_new' href='$1'>$1</a>");
+/*	text.innerHTML = text.innerHTML.replace(/(http:\/\/[^\s]+)/g, "<a target='_new' href='$1'>$1</a>");
+	text.innerHTML = text.innerHTML.replace(/(https:\/\/[^\s]+)/g, "<a target='_new' href='$1'>$1</a>");*/
         text.classList.add("text");
         li.appendChild(text)
 
