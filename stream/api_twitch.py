@@ -79,7 +79,7 @@ class APItwitch(APIbase):
         #self.uuid_points = await self.eventsub.listen_channel_subscription_message(self.user.id, self.callback_subscription_message)
         #self.uuid_points = await self.eventsub.listen_channel_subscribe(self.user.id, self.callback_channel_subscribe)
         #self.uuid_points = await self.eventsub.listen_channel_subscription_gift(self.user.id, self.callback_subscription_gift)
-        self.uuid_points = await self.eventsub.listen_channel_chat_notification(self.user.id, self.user.id, self.callback_channel_chat_notification)
+        self.uuid_notification = await self.eventsub.listen_channel_chat_notification(self.user.id, self.user.id, self.callback_channel_chat_notification)
         #self.uuid_bits = await self.pubsub.listen_bits(self.user.id, self.callback_bits)
         #self.uuid_subs = await self.pubsub.listen_channel_subscriptions(self.user.id, self.callback_subs)
 
@@ -123,7 +123,7 @@ class APItwitch(APIbase):
         """Gracefully disconnect from Twith API"""
 
         # End pubsub connections
-        #await self.pubsub.unlisten(self.uuid_points)
+        await self.pubsub.unlisten(self.uuid_notification)
        # await self.pubsub.unlisten(self.uuid_bits)
        # await self.pubsub.unlisten(self.uuid_subs)
         self.eventsub.stop()
