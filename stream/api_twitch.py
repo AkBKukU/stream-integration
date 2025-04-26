@@ -51,7 +51,10 @@ class APItwitch(APIbase):
             AuthScope.BITS_READ,
             AuthScope.CHANNEL_READ_SUBSCRIPTIONS,
             AuthScope.CHAT_READ,
-            AuthScope.CHAT_EDIT
+            AuthScope.CHAT_EDIT,
+            AuthScope.USER_READ_CHAT,
+            AuthScope.CHANNEL_BOT,
+            AuthScope.USER_BOT
         ]
 
         # Build user auth with local storage
@@ -72,9 +75,10 @@ class APItwitch(APIbase):
         self.chat = await Chat(self.api, initial_channel=['TechTangents'])
 
         # Register callbacks for pubsub actions
-        self.uuid_points = await self.eventsub.listen_channel_subscription_message(self.user.id, self.callback_subscription_message)
-        self.uuid_points = await self.eventsub.listen_channel_subscribe(self.user.id, self.callback_channel_subscribe)
-        self.uuid_points = await self.eventsub.listen_channel_subscription_gift(self.user.id, self.callback_subscription_gift)
+        #self.uuid_points = await self.eventsub.listen_channel_subscription_message(self.user.id, self.callback_subscription_message)
+        #self.uuid_points = await self.eventsub.listen_channel_subscribe(self.user.id, self.callback_channel_subscribe)
+        #self.uuid_points = await self.eventsub.listen_channel_subscription_gift(self.user.id, self.callback_subscription_gift)
+        self.uuid_points = await self.eventsub.listen_channel_chat_notification(self.user.id, self.user.id, self.callback_channel_chat_notification)
         #self.uuid_bits = await self.pubsub.listen_bits(self.user.id, self.callback_bits)
         #self.uuid_subs = await self.pubsub.listen_channel_subscriptions(self.user.id, self.callback_subs)
 
@@ -173,6 +177,13 @@ class APItwitch(APIbase):
                 "text": self.message_prep(chat),
                 "donate": chat.bits
             }
+
+        if chat.bits > 0:
+            # Send data to receivers
+            self.emit_donate(message['from'],
+                                str(chat.bits)+"b",
+                                message['text']
+                                )
 
         if chat.user.mod or chat.user.display_name == "TechTangents":
             print("Mod chat: "+message["text"][0:1])
@@ -284,6 +295,36 @@ class APItwitch(APIbase):
         #                     str(data.event.tier)+"s",
         #                     self.sub_prep(data.event)
         #                     )
+
+
+    async def callback_channel_chat_notification(self,data):
+        # https://pytwitchapi.dev/en/stable/modules/twitchAPI.object.eventsub.html#twitchAPI.object.eventsub.ChannelSubscriptionMessageEvent
+
+        ## Triggers
+        # Resubs
+
+        self.log("callback_channel_chat_notification",json.dumps(data.to_dict()))
+
+        # self.emit_donate(data.event.user_name,
+        #                     str(data.event.tier)+"s",
+        #                     self.sub_prep(data.event)
+        #                     )
+        sub_types = ["sub","resub","sub_gift","community_sub_gift","gift_paid_upgrade","prime_paid_upgrade","announcement"]
+
+        if data.event.notice_type in sub_types:
+
+            if data.event.message.text != "":
+                self.emit_donate(data.event.chatter_user_name,
+                             str(1)+"s",
+                             data.event.system_message + " and says " +data.event.message.text
+                             )
+            else:
+                self.emit_donate(data.event.chatter_user_name,
+                             str(1),
+                             data.event.system_message
+                             )
+
+
 
     async def callback_flush_subs(self):
 
