@@ -287,7 +287,7 @@ class APItwitch(APIbase):
         # https://pytwitchapi.dev/en/stable/modules/twitchAPI.object.eventsub.html#twitchAPI.object.eventsub.ChannelSubscriptionMessageEvent
 
         ## Triggers
-        # Resubs
+        # Resubsfrom
 
         self.log("callback_subscription_message",json.dumps(data.to_dict()))
 
