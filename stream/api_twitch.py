@@ -76,7 +76,7 @@ class APItwitch(APIbase):
         self.chat = await Chat(self.api, initial_channel=['TechTangents'])
 
         # Register callbacks for pubsub actions
-        #self.uuid_points = await self.eventsub.listen_channel_subscription_message(self.user.id, self.callback_subscription_message)
+        self.uuid_points = await self.eventsub.listen_channel_points_custom_reward_redemption_add(self.user.id, self.callback_channel_points_custom_reward_redemption_add)
         #self.uuid_points = await self.eventsub.listen_channel_subscribe(self.user.id, self.callback_channel_subscribe)
         #self.uuid_points = await self.eventsub.listen_channel_subscription_gift(self.user.id, self.callback_subscription_gift)
         self.uuid_notification = await self.eventsub.listen_channel_chat_notification(self.user.id, self.user.id, self.callback_channel_chat_notification)
@@ -124,7 +124,7 @@ class APItwitch(APIbase):
 
         # End pubsub connections
         await self.pubsub.unlisten(self.uuid_notification)
-       # await self.pubsub.unlisten(self.uuid_bits)
+        await self.pubsub.unlisten(self.uuid_points)
        # await self.pubsub.unlisten(self.uuid_subs)
         self.eventsub.stop()
 
@@ -308,6 +308,26 @@ class APItwitch(APIbase):
         #                     self.sub_prep(data.event)
         #                     )
 
+
+    async def callback_channel_points_custom_reward_redemption_add(self,data):
+        # https://pytwitchapi.dev/en/stable/modules/twitchAPI.object.eventsub.html#twitchAPI.object.eventsub.ChannelSubscriptionMessageEvent
+
+        ## Triggers
+        # Resubsfrom
+
+        self.log("callback_channel_points_custom_reward_redemption_add",json.dumps(data.to_dict()))
+
+
+        # Send data to receivers
+        self.emit_interact(data.event.user_name,
+                            data.event.reward.title,
+                            ""+str(data.event.user_input)
+                            )
+
+        # self.emit_donate(data.event.user_name,
+        #                     str(data.event.tier)+"s",
+        #                     self.sub_prep(data.event)
+        #
 
     async def callback_channel_chat_notification(self,data):
         # https://pytwitchapi.dev/en/stable/modules/twitchAPI.object.eventsub.html#twitchAPI.object.eventsub.ChannelSubscriptionMessageEvent
