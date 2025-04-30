@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <head>
     <title>Live Chat View</title>
+
+    <!-- Import the emote parser CSS -->
+    <link rel="stylesheet" href="chat.css">
+
+    <!-- Import the emote parser -->
+    <script src="parser.js"></script>
+
+    <!-- Main Script -->
     <script>
 
+// Create a new message parser
+const messageParser = new ChatMessageParser();
+
+// Load external data, i.e. emotes
+messageParser.load();
 
 function json_read(chat_data)
 {
@@ -23,9 +36,8 @@ function json_read(chat_data)
         name.classList.add("name");
         li.appendChild(name)
 
-        var text = document.createElement("span");
-        text.innerHTML = ": " + c['text'];
-        text.classList.add("text");
+        // Use the emote parser to parse the message
+        var text = messageParser.parseSafe(c['text']);
         li.appendChild(text)
 
         chat_list.appendChild(li)

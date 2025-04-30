@@ -1,0 +1,3314 @@
+{
+  "GoatEmotey": {
+    "source": "twitch",
+    "id": "emotesv2_e41e4d6808224f25ae1fb625aa26de63",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e41e4d6808224f25ae1fb625aa26de63/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e41e4d6808224f25ae1fb625aa26de63/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e41e4d6808224f25ae1fb625aa26de63/static/light/3.0"
+    }
+  },
+  "GoldPLZ": {
+    "source": "twitch",
+    "id": "emotesv2_c1f4899e65cf4f53b2fd98e15733973a",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_c1f4899e65cf4f53b2fd98e15733973a/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_c1f4899e65cf4f53b2fd98e15733973a/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_c1f4899e65cf4f53b2fd98e15733973a/static/light/3.0"
+    }
+  },
+  "ForSigmar": {
+    "source": "twitch",
+    "id": "emotesv2_db3385fb0ea54913bf58fa5554edfdf2",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_db3385fb0ea54913bf58fa5554edfdf2/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_db3385fb0ea54913bf58fa5554edfdf2/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_db3385fb0ea54913bf58fa5554edfdf2/static/light/3.0"
+    }
+  },
+  "TwitchConHYPE": {
+    "source": "twitch",
+    "id": "emotesv2_13b6dd7f3a3146ef8dc10f66d8b42a96",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_13b6dd7f3a3146ef8dc10f66d8b42a96/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_13b6dd7f3a3146ef8dc10f66d8b42a96/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_13b6dd7f3a3146ef8dc10f66d8b42a96/static/light/3.0"
+    }
+  },
+  "PopNemo": {
+    "source": "twitch",
+    "id": "emotesv2_5d523adb8bbb4786821cd7091e47da21",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_5d523adb8bbb4786821cd7091e47da21/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_5d523adb8bbb4786821cd7091e47da21/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_5d523adb8bbb4786821cd7091e47da21/static/light/3.0"
+    }
+  },
+  "FlawlessVictory": {
+    "source": "twitch",
+    "id": "emotesv2_0cb91e8a01c741fe9d4a0607f70395db",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_0cb91e8a01c741fe9d4a0607f70395db/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_0cb91e8a01c741fe9d4a0607f70395db/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_0cb91e8a01c741fe9d4a0607f70395db/static/light/3.0"
+    }
+  },
+  "PikaRamen": {
+    "source": "twitch",
+    "id": "emotesv2_a25ad7124e584c949e2f63917e3d747a",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a25ad7124e584c949e2f63917e3d747a/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a25ad7124e584c949e2f63917e3d747a/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a25ad7124e584c949e2f63917e3d747a/static/light/3.0"
+    }
+  },
+  "DinoDance": {
+    "source": "twitch",
+    "id": "emotesv2_dcd06b30a5c24f6eb871e8f5edbd44f7",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_dcd06b30a5c24f6eb871e8f5edbd44f7/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_dcd06b30a5c24f6eb871e8f5edbd44f7/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_dcd06b30a5c24f6eb871e8f5edbd44f7/static/light/3.0"
+    }
+  },
+  "NiceTry": {
+    "source": "twitch",
+    "id": "emotesv2_1f524be9838146e3bc9e529c17f797d3",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_1f524be9838146e3bc9e529c17f797d3/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_1f524be9838146e3bc9e529c17f797d3/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_1f524be9838146e3bc9e529c17f797d3/static/light/3.0"
+    }
+  },
+  "LionOfYara": {
+    "source": "twitch",
+    "id": "emotesv2_adfadf0ae06a4258adc865761746b227",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_adfadf0ae06a4258adc865761746b227/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_adfadf0ae06a4258adc865761746b227/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_adfadf0ae06a4258adc865761746b227/static/light/3.0"
+    }
+  },
+  "NewRecord": {
+    "source": "twitch",
+    "id": "emotesv2_53f6a6af8b0e453d874bbefee49b3e73",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_53f6a6af8b0e453d874bbefee49b3e73/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_53f6a6af8b0e453d874bbefee49b3e73/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_53f6a6af8b0e453d874bbefee49b3e73/static/light/3.0"
+    }
+  },
+  "Lechonk": {
+    "source": "twitch",
+    "id": "emotesv2_665235901db747b1bd395a5f1c0ab8a9",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_665235901db747b1bd395a5f1c0ab8a9/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_665235901db747b1bd395a5f1c0ab8a9/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_665235901db747b1bd395a5f1c0ab8a9/static/light/3.0"
+    }
+  },
+  "Getcamped": {
+    "source": "twitch",
+    "id": "emotesv2_291135bb36d24d33bf53860128b5095c",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_291135bb36d24d33bf53860128b5095c/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_291135bb36d24d33bf53860128b5095c/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_291135bb36d24d33bf53860128b5095c/static/light/3.0"
+    }
+  },
+  "SUBprise": {
+    "source": "twitch",
+    "id": "emotesv2_fcbeed664f7c47d6ba3b57691275ef51",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_fcbeed664f7c47d6ba3b57691275ef51/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_fcbeed664f7c47d6ba3b57691275ef51/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_fcbeed664f7c47d6ba3b57691275ef51/static/light/3.0"
+    }
+  },
+  "FallHalp": {
+    "source": "twitch",
+    "id": "emotesv2_7f9b025d534544afaf679e13fbd47b88",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_7f9b025d534544afaf679e13fbd47b88/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_7f9b025d534544afaf679e13fbd47b88/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_7f9b025d534544afaf679e13fbd47b88/static/light/3.0"
+    }
+  },
+  "FallCry": {
+    "source": "twitch",
+    "id": "emotesv2_2734f1a85677416a9d8f846a2d1b4721",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_2734f1a85677416a9d8f846a2d1b4721/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_2734f1a85677416a9d8f846a2d1b4721/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_2734f1a85677416a9d8f846a2d1b4721/static/light/3.0"
+    }
+  },
+  "FallWinning": {
+    "source": "twitch",
+    "id": "emotesv2_dee4ecfb7f0940bead9765da02c57ca9",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_dee4ecfb7f0940bead9765da02c57ca9/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_dee4ecfb7f0940bead9765da02c57ca9/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_dee4ecfb7f0940bead9765da02c57ca9/static/light/3.0"
+    }
+  },
+  "MechaRobot": {
+    "source": "twitch",
+    "id": "emotesv2_0be25a1663bd472495b91e0302cec166",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_0be25a1663bd472495b91e0302cec166/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_0be25a1663bd472495b91e0302cec166/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_0be25a1663bd472495b91e0302cec166/static/light/3.0"
+    }
+  },
+  "ImTyping": {
+    "source": "twitch",
+    "id": "emotesv2_b0c6ccb3b12b4f99a9cc83af365a09f1",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_b0c6ccb3b12b4f99a9cc83af365a09f1/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_b0c6ccb3b12b4f99a9cc83af365a09f1/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_b0c6ccb3b12b4f99a9cc83af365a09f1/static/light/3.0"
+    }
+  },
+  "Shush": {
+    "source": "twitch",
+    "id": "emotesv2_819621bcb8f44566a1bd8ea63d06c58f",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_819621bcb8f44566a1bd8ea63d06c58f/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_819621bcb8f44566a1bd8ea63d06c58f/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_819621bcb8f44566a1bd8ea63d06c58f/static/light/3.0"
+    }
+  },
+  "MyAvatar": {
+    "source": "twitch",
+    "id": "emotesv2_c0c9c932c82244ff920ad2134be90afb",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_c0c9c932c82244ff920ad2134be90afb/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_c0c9c932c82244ff920ad2134be90afb/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_c0c9c932c82244ff920ad2134be90afb/static/light/3.0"
+    }
+  },
+  "PizzaTime": {
+    "source": "twitch",
+    "id": "emotesv2_f202746ed88f4e7c872b50b1f7fd78cc",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_f202746ed88f4e7c872b50b1f7fd78cc/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_f202746ed88f4e7c872b50b1f7fd78cc/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_f202746ed88f4e7c872b50b1f7fd78cc/static/light/3.0"
+    }
+  },
+  "LaundryBasket": {
+    "source": "twitch",
+    "id": "emotesv2_ecb0bfd49b3c4325864b948d46c8152b",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_ecb0bfd49b3c4325864b948d46c8152b/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_ecb0bfd49b3c4325864b948d46c8152b/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_ecb0bfd49b3c4325864b948d46c8152b/static/light/3.0"
+    }
+  },
+  "ModLove": {
+    "source": "twitch",
+    "id": "emotesv2_a2dfbbbbf66f4a75b0f53db841523e6c",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a2dfbbbbf66f4a75b0f53db841523e6c/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a2dfbbbbf66f4a75b0f53db841523e6c/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a2dfbbbbf66f4a75b0f53db841523e6c/static/light/3.0"
+    }
+  },
+  "PotFriend": {
+    "source": "twitch",
+    "id": "emotesv2_e02650251d204198923de93a0c62f5f5",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e02650251d204198923de93a0c62f5f5/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e02650251d204198923de93a0c62f5f5/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e02650251d204198923de93a0c62f5f5/static/light/3.0"
+    }
+  },
+  "Jebasted": {
+    "source": "twitch",
+    "id": "emotesv2_031bf329c21040a897d55ef471da3dd3",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_031bf329c21040a897d55ef471da3dd3/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_031bf329c21040a897d55ef471da3dd3/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_031bf329c21040a897d55ef471da3dd3/static/light/3.0"
+    }
+  },
+  "PogBones": {
+    "source": "twitch",
+    "id": "emotesv2_30050f4353aa4322b25b6b044703e5d1",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_30050f4353aa4322b25b6b044703e5d1/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_30050f4353aa4322b25b6b044703e5d1/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_30050f4353aa4322b25b6b044703e5d1/static/light/3.0"
+    }
+  },
+  "PoroSad": {
+    "source": "twitch",
+    "id": "emotesv2_4c39207000564711868f3196cc0a8748",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_4c39207000564711868f3196cc0a8748/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_4c39207000564711868f3196cc0a8748/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_4c39207000564711868f3196cc0a8748/static/light/3.0"
+    }
+  },
+  "KEKHeim": {
+    "source": "twitch",
+    "id": "emotesv2_7c5d25facc384c47963d25a5057a0b40",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_7c5d25facc384c47963d25a5057a0b40/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_7c5d25facc384c47963d25a5057a0b40/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_7c5d25facc384c47963d25a5057a0b40/static/light/3.0"
+    }
+  },
+  "CaitlynS": {
+    "source": "twitch",
+    "id": "emotesv2_4acac638cffb4db49f376059f7077dae",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_4acac638cffb4db49f376059f7077dae/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_4acac638cffb4db49f376059f7077dae/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_4acac638cffb4db49f376059f7077dae/static/light/3.0"
+    }
+  },
+  "HarleyWink": {
+    "source": "twitch",
+    "id": "emotesv2_8b0ac3eee4274a75868e3d0686d7b6f7",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_8b0ac3eee4274a75868e3d0686d7b6f7/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_8b0ac3eee4274a75868e3d0686d7b6f7/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_8b0ac3eee4274a75868e3d0686d7b6f7/static/light/3.0"
+    }
+  },
+  "WhySoSerious": {
+    "source": "twitch",
+    "id": "emotesv2_1fda4a1b40094c93af334f8b60868a7c",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_1fda4a1b40094c93af334f8b60868a7c/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_1fda4a1b40094c93af334f8b60868a7c/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_1fda4a1b40094c93af334f8b60868a7c/static/light/3.0"
+    }
+  },
+  "DarkKnight": {
+    "source": "twitch",
+    "id": "emotesv2_d9567e500d78441793bee538dcabc1da",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_d9567e500d78441793bee538dcabc1da/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_d9567e500d78441793bee538dcabc1da/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_d9567e500d78441793bee538dcabc1da/static/light/3.0"
+    }
+  },
+  "FamilyMan": {
+    "source": "twitch",
+    "id": "emotesv2_89f3f0761c7b4f708061e9e4be3b7d17",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_89f3f0761c7b4f708061e9e4be3b7d17/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_89f3f0761c7b4f708061e9e4be3b7d17/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_89f3f0761c7b4f708061e9e4be3b7d17/static/light/3.0"
+    }
+  },
+  "RyuChamp": {
+    "source": "twitch",
+    "id": "emotesv2_0ebc590ba68447269831af61d8bc9e0d",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_0ebc590ba68447269831af61d8bc9e0d/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_0ebc590ba68447269831af61d8bc9e0d/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_0ebc590ba68447269831af61d8bc9e0d/static/light/3.0"
+    }
+  },
+  "HungryPaimon": {
+    "source": "twitch",
+    "id": "emotesv2_535e40afa0b34a9481997627b1b47d96",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_535e40afa0b34a9481997627b1b47d96/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_535e40afa0b34a9481997627b1b47d96/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_535e40afa0b34a9481997627b1b47d96/static/light/3.0"
+    }
+  },
+  "TransgenderPride": {
+    "source": "twitch",
+    "id": "307827377",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/307827377/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/307827377/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/307827377/static/light/3.0"
+    }
+  },
+  "PansexualPride": {
+    "source": "twitch",
+    "id": "307827370",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/307827370/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/307827370/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/307827370/static/light/3.0"
+    }
+  },
+  "NonbinaryPride": {
+    "source": "twitch",
+    "id": "307827356",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/307827356/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/307827356/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/307827356/static/light/3.0"
+    }
+  },
+  "LesbianPride": {
+    "source": "twitch",
+    "id": "307827340",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/307827340/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/307827340/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/307827340/static/light/3.0"
+    }
+  },
+  "IntersexPride": {
+    "source": "twitch",
+    "id": "307827332",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/307827332/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/307827332/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/307827332/static/light/3.0"
+    }
+  },
+  "GenderFluidPride": {
+    "source": "twitch",
+    "id": "307827326",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/307827326/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/307827326/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/307827326/static/light/3.0"
+    }
+  },
+  "GayPride": {
+    "source": "twitch",
+    "id": "307827321",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/307827321/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/307827321/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/307827321/static/light/3.0"
+    }
+  },
+  "BisexualPride": {
+    "source": "twitch",
+    "id": "307827313",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/307827313/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/307827313/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/307827313/static/light/3.0"
+    }
+  },
+  "AsexualPride": {
+    "source": "twitch",
+    "id": "307827267",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/307827267/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/307827267/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/307827267/static/light/3.0"
+    }
+  },
+  "PogChamp": {
+    "source": "twitch",
+    "id": "305954156",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/305954156/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/305954156/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/305954156/static/light/3.0"
+    }
+  },
+  "GlitchNRG": {
+    "source": "twitch",
+    "id": "304489309",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/304489309/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/304489309/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/304489309/static/light/3.0"
+    }
+  },
+  "GlitchLit": {
+    "source": "twitch",
+    "id": "304489128",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/304489128/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/304489128/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/304489128/static/light/3.0"
+    }
+  },
+  "StinkyGlitch": {
+    "source": "twitch",
+    "id": "304486324",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/304486324/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/304486324/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/304486324/static/light/3.0"
+    }
+  },
+  "GlitchCat": {
+    "source": "twitch",
+    "id": "304486301",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/304486301/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/304486301/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/304486301/static/light/3.0"
+    }
+  },
+  "FootGoal": {
+    "source": "twitch",
+    "id": "302628617",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/302628617/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/302628617/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/302628617/static/light/3.0"
+    }
+  },
+  "FootYellow": {
+    "source": "twitch",
+    "id": "302628613",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/302628613/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/302628613/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/302628613/static/light/3.0"
+    }
+  },
+  "FootBall": {
+    "source": "twitch",
+    "id": "302628600",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/302628600/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/302628600/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/302628600/static/light/3.0"
+    }
+  },
+  "BlackLivesMatter": {
+    "source": "twitch",
+    "id": "302537250",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/302537250/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/302537250/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/302537250/static/light/3.0"
+    }
+  },
+  "ExtraLife": {
+    "source": "twitch",
+    "id": "302426269",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/302426269/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/302426269/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/302426269/static/light/3.0"
+    }
+  },
+  "VirtualHug": {
+    "source": "twitch",
+    "id": "301696583",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/301696583/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/301696583/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/301696583/static/light/3.0"
+    }
+  },
+  "R-)": {
+    "source": "twitch",
+    "id": "555555600",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555600/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555600/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555600/static/light/3.0"
+    }
+  },
+  "R)": {
+    "source": "twitch",
+    "id": "14",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/14/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/14/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/14/static/light/3.0"
+    }
+  },
+  ";-p": {
+    "source": "twitch",
+    "id": "555555598",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555598/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555598/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555598/static/light/3.0"
+    }
+  },
+  ";p": {
+    "source": "twitch",
+    "id": "555555597",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555597/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555597/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555597/static/light/3.0"
+    }
+  },
+  ";-P": {
+    "source": "twitch",
+    "id": "555555596",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555596/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555596/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555596/static/light/3.0"
+    }
+  },
+  ";P": {
+    "source": "twitch",
+    "id": "13",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/13/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/13/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/13/static/light/3.0"
+    }
+  },
+  ":-p": {
+    "source": "twitch",
+    "id": "555555594",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555594/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555594/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555594/static/light/3.0"
+    }
+  },
+  ":p": {
+    "source": "twitch",
+    "id": "555555593",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555593/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555593/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555593/static/light/3.0"
+    }
+  },
+  ":-P": {
+    "source": "twitch",
+    "id": "555555592",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555592/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555592/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555592/static/light/3.0"
+    }
+  },
+  ":P": {
+    "source": "twitch",
+    "id": "12",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/12/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/12/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/12/static/light/3.0"
+    }
+  },
+  ";-)": {
+    "source": "twitch",
+    "id": "555555590",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555590/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555590/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555590/static/light/3.0"
+    }
+  },
+  ";)": {
+    "source": "twitch",
+    "id": "11",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/11/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/11/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/11/static/light/3.0"
+    }
+  },
+  ":-\\": {
+    "source": "twitch",
+    "id": "555555588",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555588/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555588/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555588/static/light/3.0"
+    }
+  },
+  ":\\": {
+    "source": "twitch",
+    "id": "555555587",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555587/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555587/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555587/static/light/3.0"
+    }
+  },
+  ":-/": {
+    "source": "twitch",
+    "id": "555555586",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555586/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555586/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555586/static/light/3.0"
+    }
+  },
+  ":/": {
+    "source": "twitch",
+    "id": "10",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/10/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/10/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/10/static/light/3.0"
+    }
+  },
+  "<3": {
+    "source": "twitch",
+    "id": "9",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/9/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/9/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/9/static/light/3.0"
+    }
+  },
+  ":-o": {
+    "source": "twitch",
+    "id": "555555583",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555583/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555583/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555583/static/light/3.0"
+    }
+  },
+  ":o": {
+    "source": "twitch",
+    "id": "555555582",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555582/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555582/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555582/static/light/3.0"
+    }
+  },
+  ":-O": {
+    "source": "twitch",
+    "id": "555555581",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555581/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555581/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555581/static/light/3.0"
+    }
+  },
+  ":O": {
+    "source": "twitch",
+    "id": "8",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/8/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/8/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/8/static/light/3.0"
+    }
+  },
+  "8-)": {
+    "source": "twitch",
+    "id": "555555579",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555579/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555579/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555579/static/light/3.0"
+    }
+  },
+  "B-)": {
+    "source": "twitch",
+    "id": "555555578",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555578/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555578/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555578/static/light/3.0"
+    }
+  },
+  "B)": {
+    "source": "twitch",
+    "id": "7",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/7/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/7/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/7/static/light/3.0"
+    }
+  },
+  "o.o": {
+    "source": "twitch",
+    "id": "555555576",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555576/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555576/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555576/static/light/3.0"
+    }
+  },
+  "o_o": {
+    "source": "twitch",
+    "id": "555555575",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555575/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555575/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555575/static/light/3.0"
+    }
+  },
+  "o.O": {
+    "source": "twitch",
+    "id": "555555574",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555574/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555574/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555574/static/light/3.0"
+    }
+  },
+  "o_O": {
+    "source": "twitch",
+    "id": "555555573",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555573/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555573/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555573/static/light/3.0"
+    }
+  },
+  "O.O": {
+    "source": "twitch",
+    "id": "555555572",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555572/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555572/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555572/static/light/3.0"
+    }
+  },
+  "O_O": {
+    "source": "twitch",
+    "id": "555555571",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555571/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555571/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555571/static/light/3.0"
+    }
+  },
+  "O.o": {
+    "source": "twitch",
+    "id": "555555570",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555570/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555570/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555570/static/light/3.0"
+    }
+  },
+  "O_o": {
+    "source": "twitch",
+    "id": "6",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/6/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/6/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/6/static/light/3.0"
+    }
+  },
+  ":-Z": {
+    "source": "twitch",
+    "id": "555555568",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555568/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555568/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555568/static/light/3.0"
+    }
+  },
+  ":Z": {
+    "source": "twitch",
+    "id": "555555567",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555567/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555567/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555567/static/light/3.0"
+    }
+  },
+  ":-z": {
+    "source": "twitch",
+    "id": "555555566",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555566/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555566/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555566/static/light/3.0"
+    }
+  },
+  ":z": {
+    "source": "twitch",
+    "id": "555555565",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555565/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555565/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555565/static/light/3.0"
+    }
+  },
+  ":-|": {
+    "source": "twitch",
+    "id": "555555564",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555564/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555564/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555564/static/light/3.0"
+    }
+  },
+  ":|": {
+    "source": "twitch",
+    "id": "5",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/5/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/5/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/5/static/light/3.0"
+    }
+  },
+  ">(": {
+    "source": "twitch",
+    "id": "4",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/4/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/4/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/4/static/light/3.0"
+    }
+  },
+  ":-D": {
+    "source": "twitch",
+    "id": "555555561",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555561/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555561/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555561/static/light/3.0"
+    }
+  },
+  ":D": {
+    "source": "twitch",
+    "id": "3",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/3/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/3/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/3/static/light/3.0"
+    }
+  },
+  ":-(": {
+    "source": "twitch",
+    "id": "555555559",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555559/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555559/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555559/static/light/3.0"
+    }
+  },
+  ":(": {
+    "source": "twitch",
+    "id": "2",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/2/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/2/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/2/static/light/3.0"
+    }
+  },
+  ":-)": {
+    "source": "twitch",
+    "id": "555555557",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/555555557/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/555555557/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/555555557/static/light/3.0"
+    }
+  },
+  "BOP": {
+    "source": "twitch",
+    "id": "301428702",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/301428702/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/301428702/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/301428702/static/light/3.0"
+    }
+  },
+  "SingsNote": {
+    "source": "twitch",
+    "id": "300116350",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/300116350/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/300116350/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/300116350/static/light/3.0"
+    }
+  },
+  "SingsMic": {
+    "source": "twitch",
+    "id": "300116349",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/300116349/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/300116349/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/300116349/static/light/3.0"
+    }
+  },
+  "TwitchSings": {
+    "source": "twitch",
+    "id": "300116344",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/300116344/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/300116344/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/300116344/static/light/3.0"
+    }
+  },
+  "SoonerLater": {
+    "source": "twitch",
+    "id": "2113050",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/2113050/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/2113050/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/2113050/static/light/3.0"
+    }
+  },
+  "HolidayTree": {
+    "source": "twitch",
+    "id": "1713825",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1713825/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1713825/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1713825/static/light/3.0"
+    }
+  },
+  "HolidaySanta": {
+    "source": "twitch",
+    "id": "1713822",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1713822/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1713822/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1713822/static/light/3.0"
+    }
+  },
+  "HolidayPresent": {
+    "source": "twitch",
+    "id": "1713819",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1713819/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1713819/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1713819/static/light/3.0"
+    }
+  },
+  "HolidayLog": {
+    "source": "twitch",
+    "id": "1713816",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1713816/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1713816/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1713816/static/light/3.0"
+    }
+  },
+  "HolidayCookie": {
+    "source": "twitch",
+    "id": "1713813",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1713813/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1713813/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1713813/static/light/3.0"
+    }
+  },
+  "GunRun": {
+    "source": "twitch",
+    "id": "1584743",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1584743/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1584743/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1584743/static/light/3.0"
+    }
+  },
+  "PixelBob": {
+    "source": "twitch",
+    "id": "1547903",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1547903/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1547903/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1547903/static/light/3.0"
+    }
+  },
+  "FBPenalty": {
+    "source": "twitch",
+    "id": "1441289",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1441289/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1441289/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1441289/static/light/3.0"
+    }
+  },
+  "FBChallenge": {
+    "source": "twitch",
+    "id": "1441285",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1441285/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1441285/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1441285/static/light/3.0"
+    }
+  },
+  "FBCatch": {
+    "source": "twitch",
+    "id": "1441281",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1441281/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1441281/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1441281/static/light/3.0"
+    }
+  },
+  "FBBlock": {
+    "source": "twitch",
+    "id": "1441276",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1441276/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1441276/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1441276/static/light/3.0"
+    }
+  },
+  "FBSpiral": {
+    "source": "twitch",
+    "id": "1441273",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1441273/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1441273/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1441273/static/light/3.0"
+    }
+  },
+  "FBPass": {
+    "source": "twitch",
+    "id": "1441271",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1441271/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1441271/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1441271/static/light/3.0"
+    }
+  },
+  "FBRun": {
+    "source": "twitch",
+    "id": "1441261",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1441261/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1441261/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1441261/static/light/3.0"
+    }
+  },
+  "MaxLOL": {
+    "source": "twitch",
+    "id": "1290325",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1290325/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1290325/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1290325/static/light/3.0"
+    }
+  },
+  "TwitchRPG": {
+    "source": "twitch",
+    "id": "1220086",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1220086/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1220086/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1220086/static/light/3.0"
+    }
+  },
+  "PinkMercy": {
+    "source": "twitch",
+    "id": "1003190",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1003190/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1003190/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1003190/static/light/3.0"
+    }
+  },
+  "MercyWing2": {
+    "source": "twitch",
+    "id": "1003189",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1003189/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1003189/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1003189/static/light/3.0"
+    }
+  },
+  "MercyWing1": {
+    "source": "twitch",
+    "id": "1003187",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1003187/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1003187/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1003187/static/light/3.0"
+    }
+  },
+  "PartyHat": {
+    "source": "twitch",
+    "id": "965738",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/965738/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/965738/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/965738/static/light/3.0"
+    }
+  },
+  "EarthDay": {
+    "source": "twitch",
+    "id": "959018",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/959018/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/959018/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/959018/static/light/3.0"
+    }
+  },
+  "TombRaid": {
+    "source": "twitch",
+    "id": "864205",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/864205/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/864205/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/864205/static/light/3.0"
+    }
+  },
+  "PopCorn": {
+    "source": "twitch",
+    "id": "724216",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/724216/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/724216/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/724216/static/light/3.0"
+    }
+  },
+  "FBtouchdown": {
+    "source": "twitch",
+    "id": "626795",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/626795/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/626795/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/626795/static/light/3.0"
+    }
+  },
+  "TPFufun": {
+    "source": "twitch",
+    "id": "508650",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/508650/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/508650/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/508650/static/light/3.0"
+    }
+  },
+  "TwitchVotes": {
+    "source": "twitch",
+    "id": "479745",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/479745/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/479745/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/479745/static/light/3.0"
+    }
+  },
+  "DarkMode": {
+    "source": "twitch",
+    "id": "461298",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/461298/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/461298/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/461298/static/light/3.0"
+    }
+  },
+  "HSWP": {
+    "source": "twitch",
+    "id": "446979",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/446979/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/446979/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/446979/static/light/3.0"
+    }
+  },
+  "HSCheers": {
+    "source": "twitch",
+    "id": "444572",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/444572/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/444572/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/444572/static/light/3.0"
+    }
+  },
+  "PowerUpL": {
+    "source": "twitch",
+    "id": "425688",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/425688/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/425688/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/425688/static/light/3.0"
+    }
+  },
+  "PowerUpR": {
+    "source": "twitch",
+    "id": "425671",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/425671/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/425671/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/425671/static/light/3.0"
+    }
+  },
+  "LUL": {
+    "source": "twitch",
+    "id": "425618",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/425618/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/425618/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/425618/static/light/3.0"
+    }
+  },
+  "EntropyWins": {
+    "source": "twitch",
+    "id": "376765",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/376765/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/376765/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/376765/static/light/3.0"
+    }
+  },
+  "TPcrunchyroll": {
+    "source": "twitch",
+    "id": "323914",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/323914/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/323914/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/323914/static/light/3.0"
+    }
+  },
+  "TwitchUnity": {
+    "source": "twitch",
+    "id": "196892",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/196892/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/196892/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/196892/static/light/3.0"
+    }
+  },
+  "Squid4": {
+    "source": "twitch",
+    "id": "191767",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/191767/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/191767/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/191767/static/light/3.0"
+    }
+  },
+  "Squid3": {
+    "source": "twitch",
+    "id": "191764",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/191764/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/191764/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/191764/static/light/3.0"
+    }
+  },
+  "Squid2": {
+    "source": "twitch",
+    "id": "191763",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/191763/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/191763/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/191763/static/light/3.0"
+    }
+  },
+  "Squid1": {
+    "source": "twitch",
+    "id": "191762",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/191762/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/191762/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/191762/static/light/3.0"
+    }
+  },
+  "CrreamAwk": {
+    "source": "twitch",
+    "id": "191313",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/191313/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/191313/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/191313/static/light/3.0"
+    }
+  },
+  "CarlSmile": {
+    "source": "twitch",
+    "id": "166266",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/166266/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/166266/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/166266/static/light/3.0"
+    }
+  },
+  "TwitchLit": {
+    "source": "twitch",
+    "id": "166263",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/166263/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/166263/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/166263/static/light/3.0"
+    }
+  },
+  "TehePelo": {
+    "source": "twitch",
+    "id": "160404",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/160404/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/160404/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/160404/static/light/3.0"
+    }
+  },
+  "TearGlove": {
+    "source": "twitch",
+    "id": "160403",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/160403/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/160403/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/160403/static/light/3.0"
+    }
+  },
+  "SabaPing": {
+    "source": "twitch",
+    "id": "160402",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/160402/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/160402/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/160402/static/light/3.0"
+    }
+  },
+  "PunOko": {
+    "source": "twitch",
+    "id": "160401",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/160401/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/160401/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/160401/static/light/3.0"
+    }
+  },
+  "KonCha": {
+    "source": "twitch",
+    "id": "160400",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/160400/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/160400/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/160400/static/light/3.0"
+    }
+  },
+  "Kappu": {
+    "source": "twitch",
+    "id": "160397",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/160397/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/160397/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/160397/static/light/3.0"
+    }
+  },
+  "InuyoFace": {
+    "source": "twitch",
+    "id": "160396",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/160396/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/160396/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/160396/static/light/3.0"
+    }
+  },
+  "BigPhish": {
+    "source": "twitch",
+    "id": "160395",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/160395/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/160395/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/160395/static/light/3.0"
+    }
+  },
+  "BegWan": {
+    "source": "twitch",
+    "id": "160394",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/160394/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/160394/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/160394/static/light/3.0"
+    }
+  },
+  "ThankEgg": {
+    "source": "twitch",
+    "id": "160392",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/160392/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/160392/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/160392/static/light/3.0"
+    }
+  },
+  "MorphinTime": {
+    "source": "twitch",
+    "id": "156787",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/156787/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/156787/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/156787/static/light/3.0"
+    }
+  },
+  "TheIlluminati": {
+    "source": "twitch",
+    "id": "145315",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/145315/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/145315/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/145315/static/light/3.0"
+    }
+  },
+  "TBAngel": {
+    "source": "twitch",
+    "id": "143490",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/143490/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/143490/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/143490/static/light/3.0"
+    }
+  },
+  "MVGame": {
+    "source": "twitch",
+    "id": "142140",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/142140/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/142140/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/142140/static/light/3.0"
+    }
+  },
+  "NinjaGrumpy": {
+    "source": "twitch",
+    "id": "138325",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/138325/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/138325/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/138325/static/light/3.0"
+    }
+  },
+  "PartyTime": {
+    "source": "twitch",
+    "id": "135393",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/135393/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/135393/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/135393/static/light/3.0"
+    }
+  },
+  "RlyTho": {
+    "source": "twitch",
+    "id": "134256",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/134256/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/134256/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/134256/static/light/3.0"
+    }
+  },
+  "UWot": {
+    "source": "twitch",
+    "id": "134255",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/134255/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/134255/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/134255/static/light/3.0"
+    }
+  },
+  "YouDontSay": {
+    "source": "twitch",
+    "id": "134254",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/134254/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/134254/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/134254/static/light/3.0"
+    }
+  },
+  "KAPOW": {
+    "source": "twitch",
+    "id": "133537",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/133537/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/133537/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/133537/static/light/3.0"
+    }
+  },
+  "ItsBoshyTime": {
+    "source": "twitch",
+    "id": "133468",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/133468/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/133468/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/133468/static/light/3.0"
+    }
+  },
+  "CoolStoryBob": {
+    "source": "twitch",
+    "id": "123171",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/123171/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/123171/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/123171/static/light/3.0"
+    }
+  },
+  "TriHard": {
+    "source": "twitch",
+    "id": "120232",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/120232/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/120232/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/120232/static/light/3.0"
+    }
+  },
+  "SuperVinlin": {
+    "source": "twitch",
+    "id": "118772",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/118772/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/118772/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/118772/static/light/3.0"
+    }
+  },
+  "FreakinStinkin": {
+    "source": "twitch",
+    "id": "117701",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/117701/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/117701/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/117701/static/light/3.0"
+    }
+  },
+  "Poooound": {
+    "source": "twitch",
+    "id": "117484",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/117484/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/117484/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/117484/static/light/3.0"
+    }
+  },
+  "CurseLit": {
+    "source": "twitch",
+    "id": "116625",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/116625/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/116625/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/116625/static/light/3.0"
+    }
+  },
+  "BatChest": {
+    "source": "twitch",
+    "id": "115234",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/115234/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/115234/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/115234/static/light/3.0"
+    }
+  },
+  "BrainSlug": {
+    "source": "twitch",
+    "id": "115233",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/115233/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/115233/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/115233/static/light/3.0"
+    }
+  },
+  "PrimeMe": {
+    "source": "twitch",
+    "id": "115075",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/115075/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/115075/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/115075/static/light/3.0"
+    }
+  },
+  "StrawBeary": {
+    "source": "twitch",
+    "id": "114876",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/114876/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/114876/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/114876/static/light/3.0"
+    }
+  },
+  "RaccAttack": {
+    "source": "twitch",
+    "id": "114870",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/114870/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/114870/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/114870/static/light/3.0"
+    }
+  },
+  "UncleNox": {
+    "source": "twitch",
+    "id": "114856",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/114856/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/114856/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/114856/static/light/3.0"
+    }
+  },
+  "WTRuck": {
+    "source": "twitch",
+    "id": "114847",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/114847/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/114847/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/114847/static/light/3.0"
+    }
+  },
+  "TooSpicy": {
+    "source": "twitch",
+    "id": "114846",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/114846/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/114846/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/114846/static/light/3.0"
+    }
+  },
+  "Jebaited": {
+    "source": "twitch",
+    "id": "114836",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/114836/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/114836/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/114836/static/light/3.0"
+    }
+  },
+  "DogFace": {
+    "source": "twitch",
+    "id": "114835",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/114835/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/114835/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/114835/static/light/3.0"
+    }
+  },
+  "BlargNaut": {
+    "source": "twitch",
+    "id": "114738",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/114738/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/114738/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/114738/static/light/3.0"
+    }
+  },
+  "TakeNRG": {
+    "source": "twitch",
+    "id": "112292",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/112292/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/112292/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/112292/static/light/3.0"
+    }
+  },
+  "GivePLZ": {
+    "source": "twitch",
+    "id": "112291",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/112291/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/112291/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/112291/static/light/3.0"
+    }
+  },
+  "imGlitch": {
+    "source": "twitch",
+    "id": "112290",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/112290/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/112290/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/112290/static/light/3.0"
+    }
+  },
+  "pastaThat": {
+    "source": "twitch",
+    "id": "112289",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/112289/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/112289/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/112289/static/light/3.0"
+    }
+  },
+  "copyThis": {
+    "source": "twitch",
+    "id": "112288",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/112288/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/112288/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/112288/static/light/3.0"
+    }
+  },
+  "UnSane": {
+    "source": "twitch",
+    "id": "111792",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/111792/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/111792/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/111792/static/light/3.0"
+    }
+  },
+  "DatSheffy": {
+    "source": "twitch",
+    "id": "111700",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/111700/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/111700/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/111700/static/light/3.0"
+    }
+  },
+  "TheTarFu": {
+    "source": "twitch",
+    "id": "111351",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/111351/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/111351/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/111351/static/light/3.0"
+    }
+  },
+  "PicoMause": {
+    "source": "twitch",
+    "id": "111300",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/111300/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/111300/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/111300/static/light/3.0"
+    }
+  },
+  "TinyFace": {
+    "source": "twitch",
+    "id": "111119",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/111119/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/111119/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/111119/static/light/3.0"
+    }
+  },
+  "DxCat": {
+    "source": "twitch",
+    "id": "110734",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/110734/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/110734/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/110734/static/light/3.0"
+    }
+  },
+  "RuleFive": {
+    "source": "twitch",
+    "id": "107030",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/107030/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/107030/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/107030/static/light/3.0"
+    }
+  },
+  "VoteNay": {
+    "source": "twitch",
+    "id": "106294",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/106294/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/106294/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/106294/static/light/3.0"
+    }
+  },
+  "VoteYea": {
+    "source": "twitch",
+    "id": "106293",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/106293/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/106293/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/106293/static/light/3.0"
+    }
+  },
+  "PJSugar": {
+    "source": "twitch",
+    "id": "102556",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/102556/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/102556/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/102556/static/light/3.0"
+    }
+  },
+  "DoritosChip": {
+    "source": "twitch",
+    "id": "102242",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/102242/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/102242/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/102242/static/light/3.0"
+    }
+  },
+  "OpieOP": {
+    "source": "twitch",
+    "id": "100590",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/100590/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/100590/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/100590/static/light/3.0"
+    }
+  },
+  "FutureMan": {
+    "source": "twitch",
+    "id": "98562",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/98562/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/98562/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/98562/static/light/3.0"
+    }
+  },
+  "ChefFrank": {
+    "source": "twitch",
+    "id": "90129",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/90129/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/90129/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/90129/static/light/3.0"
+    }
+  },
+  "StinkyCheese": {
+    "source": "twitch",
+    "id": "90076",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/90076/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/90076/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/90076/static/light/3.0"
+    }
+  },
+  "NomNom": {
+    "source": "twitch",
+    "id": "90075",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/90075/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/90075/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/90075/static/light/3.0"
+    }
+  },
+  "SmoocherZ": {
+    "source": "twitch",
+    "id": "89945",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/89945/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/89945/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/89945/static/light/3.0"
+    }
+  },
+  "cmonBruh": {
+    "source": "twitch",
+    "id": "84608",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/84608/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/84608/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/84608/static/light/3.0"
+    }
+  },
+  "KappaWealth": {
+    "source": "twitch",
+    "id": "81997",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/81997/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/81997/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/81997/static/light/3.0"
+    }
+  },
+  "MikeHogu": {
+    "source": "twitch",
+    "id": "81636",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/81636/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/81636/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/81636/static/light/3.0"
+    }
+  },
+  "VoHiYo": {
+    "source": "twitch",
+    "id": "81274",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/81274/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/81274/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/81274/static/light/3.0"
+    }
+  },
+  "KomodoHype": {
+    "source": "twitch",
+    "id": "81273",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/81273/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/81273/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/81273/static/light/3.0"
+    }
+  },
+  "SeriousSloth": {
+    "source": "twitch",
+    "id": "81249",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/81249/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/81249/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/81249/static/light/3.0"
+    }
+  },
+  "OSFrog": {
+    "source": "twitch",
+    "id": "81248",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/81248/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/81248/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/81248/static/light/3.0"
+    }
+  },
+  "OhMyDog": {
+    "source": "twitch",
+    "id": "81103",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/81103/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/81103/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/81103/static/light/3.0"
+    }
+  },
+  "KappaClaus": {
+    "source": "twitch",
+    "id": "74510",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/74510/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/74510/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/74510/static/light/3.0"
+    }
+  },
+  "KappaRoss": {
+    "source": "twitch",
+    "id": "70433",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/70433/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/70433/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/70433/static/light/3.0"
+    }
+  },
+  "MingLee": {
+    "source": "twitch",
+    "id": "68856",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/68856/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/68856/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/68856/static/light/3.0"
+    }
+  },
+  "SeemsGood": {
+    "source": "twitch",
+    "id": "64138",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/64138/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/64138/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/64138/static/light/3.0"
+    }
+  },
+  "twitchRaid": {
+    "source": "twitch",
+    "id": "62836",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/62836/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/62836/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/62836/static/light/3.0"
+    }
+  },
+  "bleedPurple": {
+    "source": "twitch",
+    "id": "62835",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/62835/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/62835/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/62835/static/light/3.0"
+    }
+  },
+  "duDudu": {
+    "source": "twitch",
+    "id": "62834",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/62834/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/62834/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/62834/static/light/3.0"
+    }
+  },
+  "riPepperonis": {
+    "source": "twitch",
+    "id": "62833",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/62833/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/62833/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/62833/static/light/3.0"
+    }
+  },
+  "NotLikeThis": {
+    "source": "twitch",
+    "id": "58765",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/58765/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/58765/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/58765/static/light/3.0"
+    }
+  },
+  "DendiFace": {
+    "source": "twitch",
+    "id": "58135",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/58135/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/58135/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/58135/static/light/3.0"
+    }
+  },
+  "CoolCat": {
+    "source": "twitch",
+    "id": "58127",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/58127/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/58127/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/58127/static/light/3.0"
+    }
+  },
+  "KappaPride": {
+    "source": "twitch",
+    "id": "55338",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/55338/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/55338/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/55338/static/light/3.0"
+    }
+  },
+  "ShadyLulu": {
+    "source": "twitch",
+    "id": "52492",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/52492/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/52492/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/52492/static/light/3.0"
+    }
+  },
+  "ArgieB8": {
+    "source": "twitch",
+    "id": "51838",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/51838/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/51838/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/51838/static/light/3.0"
+    }
+  },
+  "CorgiDerp": {
+    "source": "twitch",
+    "id": "49106",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/49106/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/49106/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/49106/static/light/3.0"
+    }
+  },
+  "PraiseIt": {
+    "source": "twitch",
+    "id": "38586",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/38586/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/38586/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/38586/static/light/3.0"
+    }
+  },
+  "TTours": {
+    "source": "twitch",
+    "id": "38436",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/38436/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/38436/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/38436/static/light/3.0"
+    }
+  },
+  "mcaT": {
+    "source": "twitch",
+    "id": "35063",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/35063/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/35063/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/35063/static/light/3.0"
+    }
+  },
+  "NotATK": {
+    "source": "twitch",
+    "id": "34875",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/34875/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/34875/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/34875/static/light/3.0"
+    }
+  },
+  "HeyGuys": {
+    "source": "twitch",
+    "id": "30259",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/30259/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/30259/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/30259/static/light/3.0"
+    }
+  },
+  "Mau5": {
+    "source": "twitch",
+    "id": "30134",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/30134/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/30134/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/30134/static/light/3.0"
+    }
+  },
+  "PRChase": {
+    "source": "twitch",
+    "id": "28328",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/28328/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/28328/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/28328/static/light/3.0"
+    }
+  },
+  "WutFace": {
+    "source": "twitch",
+    "id": "28087",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/28087/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/28087/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/28087/static/light/3.0"
+    }
+  },
+  "BuddhaBar": {
+    "source": "twitch",
+    "id": "27602",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/27602/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/27602/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/27602/static/light/3.0"
+    }
+  },
+  "PermaSmug": {
+    "source": "twitch",
+    "id": "27509",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/27509/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/27509/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/27509/static/light/3.0"
+    }
+  },
+  "panicBasket": {
+    "source": "twitch",
+    "id": "22998",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/22998/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/22998/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/22998/static/light/3.0"
+    }
+  },
+  "BabyRage": {
+    "source": "twitch",
+    "id": "22639",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/22639/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/22639/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/22639/static/light/3.0"
+    }
+  },
+  "HassaanChop": {
+    "source": "twitch",
+    "id": "20225",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/20225/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/20225/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/20225/static/light/3.0"
+    }
+  },
+  "TheThing": {
+    "source": "twitch",
+    "id": "7427",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/7427/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/7427/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/7427/static/light/3.0"
+    }
+  },
+  "EleGiggle": {
+    "source": "twitch",
+    "id": "4339",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/4339/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/4339/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/4339/static/light/3.0"
+    }
+  },
+  "RitzMitz": {
+    "source": "twitch",
+    "id": "4338",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/4338/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/4338/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/4338/static/light/3.0"
+    }
+  },
+  "YouWHY": {
+    "source": "twitch",
+    "id": "4337",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/4337/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/4337/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/4337/static/light/3.0"
+    }
+  },
+  "PipeHype": {
+    "source": "twitch",
+    "id": "4240",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/4240/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/4240/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/4240/static/light/3.0"
+    }
+  },
+  "BrokeBack": {
+    "source": "twitch",
+    "id": "4057",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/4057/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/4057/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/4057/static/light/3.0"
+    }
+  },
+  "ANELE": {
+    "source": "twitch",
+    "id": "3792",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/3792/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/3792/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/3792/static/light/3.0"
+    }
+  },
+  "PanicVis": {
+    "source": "twitch",
+    "id": "3668",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/3668/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/3668/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/3668/static/light/3.0"
+    }
+  },
+  "GrammarKing": {
+    "source": "twitch",
+    "id": "3632",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/3632/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/3632/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/3632/static/light/3.0"
+    }
+  },
+  "PeoplesChamp": {
+    "source": "twitch",
+    "id": "3412",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/3412/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/3412/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/3412/static/light/3.0"
+    }
+  },
+  "SoBayed": {
+    "source": "twitch",
+    "id": "1906",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1906/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1906/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1906/static/light/3.0"
+    }
+  },
+  "BigBrother": {
+    "source": "twitch",
+    "id": "1904",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1904/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1904/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1904/static/light/3.0"
+    }
+  },
+  "Keepo": {
+    "source": "twitch",
+    "id": "1902",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1902/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1902/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1902/static/light/3.0"
+    }
+  },
+  "Kippa": {
+    "source": "twitch",
+    "id": "1901",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1901/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1901/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1901/static/light/3.0"
+    }
+  },
+  "RalpherZ": {
+    "source": "twitch",
+    "id": "1900",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1900/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1900/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1900/static/light/3.0"
+    }
+  },
+  "TF2John": {
+    "source": "twitch",
+    "id": "1899",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1899/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1899/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1899/static/light/3.0"
+    }
+  },
+  "ThunBeast": {
+    "source": "twitch",
+    "id": "1898",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1898/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1898/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1898/static/light/3.0"
+    }
+  },
+  "WholeWheat": {
+    "source": "twitch",
+    "id": "1896",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1896/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1896/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1896/static/light/3.0"
+    }
+  },
+  "DAESuppy": {
+    "source": "twitch",
+    "id": "973",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/973/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/973/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/973/static/light/3.0"
+    }
+  },
+  "FailFish": {
+    "source": "twitch",
+    "id": "360",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/360/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/360/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/360/static/light/3.0"
+    }
+  },
+  "HotPokket": {
+    "source": "twitch",
+    "id": "357",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/357/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/357/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/357/static/light/3.0"
+    }
+  },
+  "4Head": {
+    "source": "twitch",
+    "id": "354",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/354/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/354/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/354/static/light/3.0"
+    }
+  },
+  "ResidentSleeper": {
+    "source": "twitch",
+    "id": "245",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/245/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/245/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/245/static/light/3.0"
+    }
+  },
+  "FUNgineer": {
+    "source": "twitch",
+    "id": "244",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/244/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/244/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/244/static/light/3.0"
+    }
+  },
+  "PMSTwin": {
+    "source": "twitch",
+    "id": "92",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/92/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/92/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/92/static/light/3.0"
+    }
+  },
+  "ShazBotstix": {
+    "source": "twitch",
+    "id": "87",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/87/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/87/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/87/static/light/3.0"
+    }
+  },
+  "BibleThump": {
+    "source": "twitch",
+    "id": "86",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/86/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/86/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/86/static/light/3.0"
+    }
+  },
+  "AsianGlow": {
+    "source": "twitch",
+    "id": "74",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/74/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/74/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/74/static/light/3.0"
+    }
+  },
+  "DBstyle": {
+    "source": "twitch",
+    "id": "73",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/73/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/73/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/73/static/light/3.0"
+    }
+  },
+  "BloodTrail": {
+    "source": "twitch",
+    "id": "69",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/69/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/69/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/69/static/light/3.0"
+    }
+  },
+  "OneHand": {
+    "source": "twitch",
+    "id": "66",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/66/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/66/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/66/static/light/3.0"
+    }
+  },
+  "FrankerZ": {
+    "source": "twitch",
+    "id": "65",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/65/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/65/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/65/static/light/3.0"
+    }
+  },
+  "SMOrc": {
+    "source": "twitch",
+    "id": "52",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/52/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/52/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/52/static/light/3.0"
+    }
+  },
+  "ArsonNoSexy": {
+    "source": "twitch",
+    "id": "50",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/50/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/50/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/50/static/light/3.0"
+    }
+  },
+  "PunchTrees": {
+    "source": "twitch",
+    "id": "47",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/47/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/47/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/47/static/light/3.0"
+    }
+  },
+  "SSSsss": {
+    "source": "twitch",
+    "id": "46",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/46/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/46/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/46/static/light/3.0"
+    }
+  },
+  "Kreygasm": {
+    "source": "twitch",
+    "id": "41",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/41/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/41/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/41/static/light/3.0"
+    }
+  },
+  "KevinTurtle": {
+    "source": "twitch",
+    "id": "40",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/40/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/40/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/40/static/light/3.0"
+    }
+  },
+  "PJSalt": {
+    "source": "twitch",
+    "id": "36",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/36/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/36/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/36/static/light/3.0"
+    }
+  },
+  "SwiftRage": {
+    "source": "twitch",
+    "id": "34",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/34/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/34/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/34/static/light/3.0"
+    }
+  },
+  "DansGame": {
+    "source": "twitch",
+    "id": "33",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/33/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/33/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/33/static/light/3.0"
+    }
+  },
+  "GingerPower": {
+    "source": "twitch",
+    "id": "32",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/32/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/32/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/32/static/light/3.0"
+    }
+  },
+  "BCWarrior": {
+    "source": "twitch",
+    "id": "30",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/30/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/30/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/30/static/light/3.0"
+    }
+  },
+  "MrDestructoid": {
+    "source": "twitch",
+    "id": "28",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/28/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/28/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/28/static/light/3.0"
+    }
+  },
+  "JonCarnage": {
+    "source": "twitch",
+    "id": "26",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/26/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/26/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/26/static/light/3.0"
+    }
+  },
+  "Kappa": {
+    "source": "twitch",
+    "id": "25",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/25/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/25/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/25/static/light/3.0"
+    }
+  },
+  "RedCoat": {
+    "source": "twitch",
+    "id": "22",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/22/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/22/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/22/static/light/3.0"
+    }
+  },
+  "TheRinger": {
+    "source": "twitch",
+    "id": "18",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/18/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/18/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/18/static/light/3.0"
+    }
+  },
+  "StoneLightning": {
+    "source": "twitch",
+    "id": "17",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/17/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/17/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/17/static/light/3.0"
+    }
+  },
+  "OptimizePrime": {
+    "source": "twitch",
+    "id": "16",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/16/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/16/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/16/static/light/3.0"
+    }
+  },
+  "JKanStyle": {
+    "source": "twitch",
+    "id": "15",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/15/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/15/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/15/static/light/3.0"
+    }
+  },
+  ":)": {
+    "source": "twitch",
+    "id": "1",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/1/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/1/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/1/static/light/3.0"
+    }
+  },
+  "techta5Oops": {
+    "source": "twitch-channel-23352974",
+    "id": "emotesv2_ac8021a6661c4501816905b95b085c2a",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_ac8021a6661c4501816905b95b085c2a/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_ac8021a6661c4501816905b95b085c2a/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_ac8021a6661c4501816905b95b085c2a/static/light/3.0"
+    }
+  },
+  "techta5NyanWin2": {
+    "source": "twitch-channel-23352974",
+    "id": "emotesv2_279f278008bb439daa12e3ffc2067567",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_279f278008bb439daa12e3ffc2067567/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_279f278008bb439daa12e3ffc2067567/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_279f278008bb439daa12e3ffc2067567/static/light/3.0"
+    }
+  },
+  "techta5NyanWin3": {
+    "source": "twitch-channel-23352974",
+    "id": "emotesv2_b8de14e04ec145cf81c4408fb74d4a67",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_b8de14e04ec145cf81c4408fb74d4a67/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_b8de14e04ec145cf81c4408fb74d4a67/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_b8de14e04ec145cf81c4408fb74d4a67/static/light/3.0"
+    }
+  },
+  "techta5NyanWin1": {
+    "source": "twitch-channel-23352974",
+    "id": "emotesv2_470a94352f4348deb3fdbf1983eacade",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_470a94352f4348deb3fdbf1983eacade/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_470a94352f4348deb3fdbf1983eacade/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_470a94352f4348deb3fdbf1983eacade/static/light/3.0"
+    }
+  },
+  "techta5Crt": {
+    "source": "twitch-channel-23352974",
+    "id": "emotesv2_ed9776626c0849f6ac2b510853226aaf",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_ed9776626c0849f6ac2b510853226aaf/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_ed9776626c0849f6ac2b510853226aaf/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_ed9776626c0849f6ac2b510853226aaf/static/light/3.0"
+    }
+  },
+  "techta5Key": {
+    "source": "twitch-channel-23352974",
+    "id": "emotesv2_8c2cb7f210334083bd7b47fc5bea1fd3",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_8c2cb7f210334083bd7b47fc5bea1fd3/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_8c2cb7f210334083bd7b47fc5bea1fd3/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_8c2cb7f210334083bd7b47fc5bea1fd3/static/light/3.0"
+    }
+  },
+  "techta5Print": {
+    "source": "twitch-channel-23352974",
+    "id": "emotesv2_115dfe2d4a0d424cb49958d99f38bbfc",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_115dfe2d4a0d424cb49958d99f38bbfc/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_115dfe2d4a0d424cb49958d99f38bbfc/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_115dfe2d4a0d424cb49958d99f38bbfc/static/light/3.0"
+    }
+  },
+  "techta5Pro": {
+    "source": "twitch-channel-23352974",
+    "id": "emotesv2_a39fff1133eb4419ad59c99e16662c49",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a39fff1133eb4419ad59c99e16662c49/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a39fff1133eb4419ad59c99e16662c49/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a39fff1133eb4419ad59c99e16662c49/static/light/3.0"
+    }
+  },
+  "techta5Calc": {
+    "source": "twitch-channel-23352974",
+    "id": "emotesv2_2b210e0ec407402e8e6f9eff1711c15e",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_2b210e0ec407402e8e6f9eff1711c15e/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_2b210e0ec407402e8e6f9eff1711c15e/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_2b210e0ec407402e8e6f9eff1711c15e/static/light/3.0"
+    }
+  },
+  "techta5TT": {
+    "source": "twitch-channel-23352974",
+    "id": "emotesv2_3726c91a281949e4a0f563266f16a3cb",
+    "urls": {
+      "url_1x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_3726c91a281949e4a0f563266f16a3cb/static/light/1.0",
+      "url_2x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_3726c91a281949e4a0f563266f16a3cb/static/light/2.0",
+      "url_4x": "https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_3726c91a281949e4a0f563266f16a3cb/static/light/3.0"
+    }
+  },
+  ":tf:": {
+    "source": "betterttv",
+    "id": "54fa8f1401e468494b85b537",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fa8f1401e468494b85b537",
+      "url_2x": "https://cdn.betterttv.net/emote/54fa8f1401e468494b85b537/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fa8f1401e468494b85b537/4x"
+    }
+  },
+  "CiGrip": {
+    "source": "betterttv",
+    "id": "54fa8fce01e468494b85b53c",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fa8fce01e468494b85b53c",
+      "url_2x": "https://cdn.betterttv.net/emote/54fa8fce01e468494b85b53c/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fa8fce01e468494b85b53c/4x"
+    }
+  },
+  "DatSauce": {
+    "source": "betterttv",
+    "id": "54fa903b01e468494b85b53f",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fa903b01e468494b85b53f",
+      "url_2x": "https://cdn.betterttv.net/emote/54fa903b01e468494b85b53f/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fa903b01e468494b85b53f/4x"
+    }
+  },
+  "ForeverAlone": {
+    "source": "betterttv",
+    "id": "54fa909b01e468494b85b542",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fa909b01e468494b85b542",
+      "url_2x": "https://cdn.betterttv.net/emote/54fa909b01e468494b85b542/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fa909b01e468494b85b542/4x"
+    }
+  },
+  "GabeN": {
+    "source": "betterttv",
+    "id": "54fa90ba01e468494b85b543",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fa90ba01e468494b85b543",
+      "url_2x": "https://cdn.betterttv.net/emote/54fa90ba01e468494b85b543/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fa90ba01e468494b85b543/4x"
+    }
+  },
+  "HailHelix": {
+    "source": "betterttv",
+    "id": "54fa90f201e468494b85b545",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fa90f201e468494b85b545",
+      "url_2x": "https://cdn.betterttv.net/emote/54fa90f201e468494b85b545/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fa90f201e468494b85b545/4x"
+    }
+  },
+  "ShoopDaWhoop": {
+    "source": "betterttv",
+    "id": "54fa932201e468494b85b555",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fa932201e468494b85b555",
+      "url_2x": "https://cdn.betterttv.net/emote/54fa932201e468494b85b555/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fa932201e468494b85b555/4x"
+    }
+  },
+  "M&Mjc": {
+    "source": "betterttv",
+    "id": "54fab45f633595ca4c713abc",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fab45f633595ca4c713abc",
+      "url_2x": "https://cdn.betterttv.net/emote/54fab45f633595ca4c713abc/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fab45f633595ca4c713abc/4x"
+    }
+  },
+  "bttvNice": {
+    "source": "betterttv",
+    "id": "54fab7d2633595ca4c713abf",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fab7d2633595ca4c713abf",
+      "url_2x": "https://cdn.betterttv.net/emote/54fab7d2633595ca4c713abf/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fab7d2633595ca4c713abf/4x"
+    }
+  },
+  "TwaT": {
+    "source": "betterttv",
+    "id": "54fa935601e468494b85b557",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fa935601e468494b85b557",
+      "url_2x": "https://cdn.betterttv.net/emote/54fa935601e468494b85b557/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fa935601e468494b85b557/4x"
+    }
+  },
+  "WatChuSay": {
+    "source": "betterttv",
+    "id": "54fa99b601e468494b85b55d",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fa99b601e468494b85b55d",
+      "url_2x": "https://cdn.betterttv.net/emote/54fa99b601e468494b85b55d/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fa99b601e468494b85b55d/4x"
+    }
+  },
+  "tehPoleCat": {
+    "source": "betterttv",
+    "id": "566ca11a65dbbdab32ec0558",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566ca11a65dbbdab32ec0558",
+      "url_2x": "https://cdn.betterttv.net/emote/566ca11a65dbbdab32ec0558/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566ca11a65dbbdab32ec0558/4x"
+    }
+  },
+  "AngelThump": {
+    "source": "betterttv",
+    "id": "566ca1a365dbbdab32ec055b",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566ca1a365dbbdab32ec055b",
+      "url_2x": "https://cdn.betterttv.net/emote/566ca1a365dbbdab32ec055b/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566ca1a365dbbdab32ec055b/4x"
+    }
+  },
+  "TaxiBro": {
+    "source": "betterttv",
+    "id": "54fbefeb01abde735115de5b",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fbefeb01abde735115de5b",
+      "url_2x": "https://cdn.betterttv.net/emote/54fbefeb01abde735115de5b/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fbefeb01abde735115de5b/4x"
+    }
+  },
+  "BroBalt": {
+    "source": "betterttv",
+    "id": "54fbf00a01abde735115de5c",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fbf00a01abde735115de5c",
+      "url_2x": "https://cdn.betterttv.net/emote/54fbf00a01abde735115de5c/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fbf00a01abde735115de5c/4x"
+    }
+  },
+  "CandianRage": {
+    "source": "betterttv",
+    "id": "54fbf09c01abde735115de61",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/54fbf09c01abde735115de61",
+      "url_2x": "https://cdn.betterttv.net/emote/54fbf09c01abde735115de61/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/54fbf09c01abde735115de61/4x"
+    }
+  },
+  "D:": {
+    "source": "betterttv",
+    "id": "55028cd2135896936880fdd7",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/55028cd2135896936880fdd7",
+      "url_2x": "https://cdn.betterttv.net/emote/55028cd2135896936880fdd7/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/55028cd2135896936880fdd7/4x"
+    }
+  },
+  "VisLaud": {
+    "source": "betterttv",
+    "id": "550352766f86a5b26c281ba2",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/550352766f86a5b26c281ba2",
+      "url_2x": "https://cdn.betterttv.net/emote/550352766f86a5b26c281ba2/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/550352766f86a5b26c281ba2/4x"
+    }
+  },
+  "KaRappa": {
+    "source": "betterttv",
+    "id": "550b344bff8ecee922d2a3c1",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/550b344bff8ecee922d2a3c1",
+      "url_2x": "https://cdn.betterttv.net/emote/550b344bff8ecee922d2a3c1/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/550b344bff8ecee922d2a3c1/4x"
+    }
+  },
+  "FishMoley": {
+    "source": "betterttv",
+    "id": "566ca00f65dbbdab32ec0544",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566ca00f65dbbdab32ec0544",
+      "url_2x": "https://cdn.betterttv.net/emote/566ca00f65dbbdab32ec0544/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566ca00f65dbbdab32ec0544/4x"
+    }
+  },
+  "Hhhehehe": {
+    "source": "betterttv",
+    "id": "566ca02865dbbdab32ec0547",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566ca02865dbbdab32ec0547",
+      "url_2x": "https://cdn.betterttv.net/emote/566ca02865dbbdab32ec0547/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566ca02865dbbdab32ec0547/4x"
+    }
+  },
+  "KKona": {
+    "source": "betterttv",
+    "id": "566ca04265dbbdab32ec054a",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566ca04265dbbdab32ec054a",
+      "url_2x": "https://cdn.betterttv.net/emote/566ca04265dbbdab32ec054a/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566ca04265dbbdab32ec054a/4x"
+    }
+  },
+  "PoleDoge": {
+    "source": "betterttv",
+    "id": "566ca09365dbbdab32ec0555",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566ca09365dbbdab32ec0555",
+      "url_2x": "https://cdn.betterttv.net/emote/566ca09365dbbdab32ec0555/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566ca09365dbbdab32ec0555/4x"
+    }
+  },
+  "sosGame": {
+    "source": "betterttv",
+    "id": "553b48a21f145f087fc15ca6",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/553b48a21f145f087fc15ca6",
+      "url_2x": "https://cdn.betterttv.net/emote/553b48a21f145f087fc15ca6/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/553b48a21f145f087fc15ca6/4x"
+    }
+  },
+  "CruW": {
+    "source": "betterttv",
+    "id": "55471c2789d53f2d12781713",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/55471c2789d53f2d12781713",
+      "url_2x": "https://cdn.betterttv.net/emote/55471c2789d53f2d12781713/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/55471c2789d53f2d12781713/4x"
+    }
+  },
+  "RarePepe": {
+    "source": "betterttv",
+    "id": "555015b77676617e17dd2e8e",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/555015b77676617e17dd2e8e",
+      "url_2x": "https://cdn.betterttv.net/emote/555015b77676617e17dd2e8e/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/555015b77676617e17dd2e8e/4x"
+    }
+  },
+  "haHAA": {
+    "source": "betterttv",
+    "id": "555981336ba1901877765555",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/555981336ba1901877765555",
+      "url_2x": "https://cdn.betterttv.net/emote/555981336ba1901877765555/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/555981336ba1901877765555/4x"
+    }
+  },
+  "FeelsBirthdayMan": {
+    "source": "betterttv",
+    "id": "55b6524154eefd53777b2580",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/55b6524154eefd53777b2580",
+      "url_2x": "https://cdn.betterttv.net/emote/55b6524154eefd53777b2580/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/55b6524154eefd53777b2580/4x"
+    }
+  },
+  "RonSmug": {
+    "source": "betterttv",
+    "id": "55f324c47f08be9f0a63cce0",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/55f324c47f08be9f0a63cce0",
+      "url_2x": "https://cdn.betterttv.net/emote/55f324c47f08be9f0a63cce0/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/55f324c47f08be9f0a63cce0/4x"
+    }
+  },
+  "KappaCool": {
+    "source": "betterttv",
+    "id": "560577560874de34757d2dc0",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/560577560874de34757d2dc0",
+      "url_2x": "https://cdn.betterttv.net/emote/560577560874de34757d2dc0/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/560577560874de34757d2dc0/4x"
+    }
+  },
+  "FeelsBadMan": {
+    "source": "betterttv",
+    "id": "566c9fc265dbbdab32ec053b",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566c9fc265dbbdab32ec053b",
+      "url_2x": "https://cdn.betterttv.net/emote/566c9fc265dbbdab32ec053b/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566c9fc265dbbdab32ec053b/4x"
+    }
+  },
+  "bUrself": {
+    "source": "betterttv",
+    "id": "566c9f3b65dbbdab32ec052e",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566c9f3b65dbbdab32ec052e",
+      "url_2x": "https://cdn.betterttv.net/emote/566c9f3b65dbbdab32ec052e/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566c9f3b65dbbdab32ec052e/4x"
+    }
+  },
+  "ConcernDoge": {
+    "source": "betterttv",
+    "id": "566c9f6365dbbdab32ec0532",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566c9f6365dbbdab32ec0532",
+      "url_2x": "https://cdn.betterttv.net/emote/566c9f6365dbbdab32ec0532/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566c9f6365dbbdab32ec0532/4x"
+    }
+  },
+  "FeelsGoodMan": {
+    "source": "betterttv",
+    "id": "566c9fde65dbbdab32ec053e",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566c9fde65dbbdab32ec053e",
+      "url_2x": "https://cdn.betterttv.net/emote/566c9fde65dbbdab32ec053e/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566c9fde65dbbdab32ec053e/4x"
+    }
+  },
+  "FireSpeed": {
+    "source": "betterttv",
+    "id": "566c9ff365dbbdab32ec0541",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566c9ff365dbbdab32ec0541",
+      "url_2x": "https://cdn.betterttv.net/emote/566c9ff365dbbdab32ec0541/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566c9ff365dbbdab32ec0541/4x"
+    }
+  },
+  "NaM": {
+    "source": "betterttv",
+    "id": "566ca06065dbbdab32ec054e",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566ca06065dbbdab32ec054e",
+      "url_2x": "https://cdn.betterttv.net/emote/566ca06065dbbdab32ec054e/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566ca06065dbbdab32ec054e/4x"
+    }
+  },
+  "SourPls": {
+    "source": "betterttv",
+    "id": "566ca38765dbbdab32ec0560",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566ca38765dbbdab32ec0560",
+      "url_2x": "https://cdn.betterttv.net/emote/566ca38765dbbdab32ec0560/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566ca38765dbbdab32ec0560/4x"
+    }
+  },
+  "FeelsSnowMan": {
+    "source": "betterttv",
+    "id": "566dde0e65dbbdab32ec068f",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566dde0e65dbbdab32ec068f",
+      "url_2x": "https://cdn.betterttv.net/emote/566dde0e65dbbdab32ec068f/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566dde0e65dbbdab32ec068f/4x"
+    }
+  },
+  "FeelsSnowyMan": {
+    "source": "betterttv",
+    "id": "566decae65dbbdab32ec0699",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/566decae65dbbdab32ec0699",
+      "url_2x": "https://cdn.betterttv.net/emote/566decae65dbbdab32ec0699/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/566decae65dbbdab32ec0699/4x"
+    }
+  },
+  "LuL": {
+    "source": "betterttv",
+    "id": "567b00c61ddbe1786688a633",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/567b00c61ddbe1786688a633",
+      "url_2x": "https://cdn.betterttv.net/emote/567b00c61ddbe1786688a633/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/567b00c61ddbe1786688a633/4x"
+    }
+  },
+  "SaltyCorn": {
+    "source": "betterttv",
+    "id": "56901914991f200c34ffa656",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/56901914991f200c34ffa656",
+      "url_2x": "https://cdn.betterttv.net/emote/56901914991f200c34ffa656/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/56901914991f200c34ffa656/4x"
+    }
+  },
+  "monkaS": {
+    "source": "betterttv",
+    "id": "56e9f494fff3cc5c35e5287e",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/56e9f494fff3cc5c35e5287e",
+      "url_2x": "https://cdn.betterttv.net/emote/56e9f494fff3cc5c35e5287e/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/56e9f494fff3cc5c35e5287e/4x"
+    }
+  },
+  "VapeNation": {
+    "source": "betterttv",
+    "id": "56f5be00d48006ba34f530a4",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/56f5be00d48006ba34f530a4",
+      "url_2x": "https://cdn.betterttv.net/emote/56f5be00d48006ba34f530a4/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/56f5be00d48006ba34f530a4/4x"
+    }
+  },
+  "ariW": {
+    "source": "betterttv",
+    "id": "56fa09f18eff3b595e93ac26",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/56fa09f18eff3b595e93ac26",
+      "url_2x": "https://cdn.betterttv.net/emote/56fa09f18eff3b595e93ac26/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/56fa09f18eff3b595e93ac26/4x"
+    }
+  },
+  "notsquishY": {
+    "source": "betterttv",
+    "id": "5709ab688eff3b595e93c595",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/5709ab688eff3b595e93c595",
+      "url_2x": "https://cdn.betterttv.net/emote/5709ab688eff3b595e93c595/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/5709ab688eff3b595e93c595/4x"
+    }
+  },
+  "FeelsAmazingMan": {
+    "source": "betterttv",
+    "id": "5733ff12e72c3c0814233e20",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/5733ff12e72c3c0814233e20",
+      "url_2x": "https://cdn.betterttv.net/emote/5733ff12e72c3c0814233e20/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/5733ff12e72c3c0814233e20/4x"
+    }
+  },
+  "DuckerZ": {
+    "source": "betterttv",
+    "id": "573d38b50ffbf6cc5cc38dc9",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/573d38b50ffbf6cc5cc38dc9",
+      "url_2x": "https://cdn.betterttv.net/emote/573d38b50ffbf6cc5cc38dc9/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/573d38b50ffbf6cc5cc38dc9/4x"
+    }
+  },
+  "FeelsPumpkinMan": {
+    "source": "betterttv",
+    "id": "580e438942170bfd57189866",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/580e438942170bfd57189866",
+      "url_2x": "https://cdn.betterttv.net/emote/580e438942170bfd57189866/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/580e438942170bfd57189866/4x"
+    }
+  },
+  "SqShy": {
+    "source": "betterttv",
+    "id": "59cf182fcbe2693d59d7bf46",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/59cf182fcbe2693d59d7bf46",
+      "url_2x": "https://cdn.betterttv.net/emote/59cf182fcbe2693d59d7bf46/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/59cf182fcbe2693d59d7bf46/4x"
+    }
+  },
+  "Wowee": {
+    "source": "betterttv",
+    "id": "58d2e73058d8950a875ad027",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/58d2e73058d8950a875ad027",
+      "url_2x": "https://cdn.betterttv.net/emote/58d2e73058d8950a875ad027/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/58d2e73058d8950a875ad027/4x"
+    }
+  },
+  "WubTF": {
+    "source": "betterttv",
+    "id": "5dc36a8db537d747e37ac187",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/5dc36a8db537d747e37ac187",
+      "url_2x": "https://cdn.betterttv.net/emote/5dc36a8db537d747e37ac187/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/5dc36a8db537d747e37ac187/4x"
+    }
+  },
+  "cvR": {
+    "source": "betterttv",
+    "id": "5e76d2ab8c0f5c3723a9a87d",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/5e76d2ab8c0f5c3723a9a87d",
+      "url_2x": "https://cdn.betterttv.net/emote/5e76d2ab8c0f5c3723a9a87d/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/5e76d2ab8c0f5c3723a9a87d/4x"
+    }
+  },
+  "cvL": {
+    "source": "betterttv",
+    "id": "5e76d2d2d112fc372574d222",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/5e76d2d2d112fc372574d222",
+      "url_2x": "https://cdn.betterttv.net/emote/5e76d2d2d112fc372574d222/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/5e76d2d2d112fc372574d222/4x"
+    }
+  },
+  "cvHazmat": {
+    "source": "betterttv",
+    "id": "5e76d338d6581c3724c0f0b2",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/5e76d338d6581c3724c0f0b2",
+      "url_2x": "https://cdn.betterttv.net/emote/5e76d338d6581c3724c0f0b2/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/5e76d338d6581c3724c0f0b2/4x"
+    }
+  },
+  "cvMask": {
+    "source": "betterttv",
+    "id": "5e76d399d6581c3724c0f0b8",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/5e76d399d6581c3724c0f0b8",
+      "url_2x": "https://cdn.betterttv.net/emote/5e76d399d6581c3724c0f0b8/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/5e76d399d6581c3724c0f0b8/4x"
+    }
+  },
+  "DogChamp": {
+    "source": "betterttv",
+    "id": "5ffdf28dc96152314ad63960",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/5ffdf28dc96152314ad63960",
+      "url_2x": "https://cdn.betterttv.net/emote/5ffdf28dc96152314ad63960/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/5ffdf28dc96152314ad63960/4x"
+    }
+  },
+  "c!": {
+    "source": "betterttv",
+    "id": "6468f7acaee1f7f47567708e",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/6468f7acaee1f7f47567708e",
+      "url_2x": "https://cdn.betterttv.net/emote/6468f7acaee1f7f47567708e/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/6468f7acaee1f7f47567708e/4x"
+    }
+  },
+  "h!": {
+    "source": "betterttv",
+    "id": "6468f845aee1f7f47567709b",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/6468f845aee1f7f47567709b",
+      "url_2x": "https://cdn.betterttv.net/emote/6468f845aee1f7f47567709b/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/6468f845aee1f7f47567709b/4x"
+    }
+  },
+  "l!": {
+    "source": "betterttv",
+    "id": "6468f869aee1f7f4756770a8",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/6468f869aee1f7f4756770a8",
+      "url_2x": "https://cdn.betterttv.net/emote/6468f869aee1f7f4756770a8/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/6468f869aee1f7f4756770a8/4x"
+    }
+  },
+  "r!": {
+    "source": "betterttv",
+    "id": "6468f883aee1f7f4756770b5",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/6468f883aee1f7f4756770b5",
+      "url_2x": "https://cdn.betterttv.net/emote/6468f883aee1f7f4756770b5/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/6468f883aee1f7f4756770b5/4x"
+    }
+  },
+  "v!": {
+    "source": "betterttv",
+    "id": "6468f89caee1f7f4756770c2",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/6468f89caee1f7f4756770c2",
+      "url_2x": "https://cdn.betterttv.net/emote/6468f89caee1f7f4756770c2/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/6468f89caee1f7f4756770c2/4x"
+    }
+  },
+  "z!": {
+    "source": "betterttv",
+    "id": "6468f8d1aee1f7f4756770cf",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/6468f8d1aee1f7f4756770cf",
+      "url_2x": "https://cdn.betterttv.net/emote/6468f8d1aee1f7f4756770cf/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/6468f8d1aee1f7f4756770cf/4x"
+    }
+  },
+  "w!": {
+    "source": "betterttv",
+    "id": "64e3b31920cb0d25d950a9f9",
+    "urls": {
+      "url_1x": "https://cdn.betterttv.net/emote/64e3b31920cb0d25d950a9f9",
+      "url_2x": "https://cdn.betterttv.net/emote/64e3b31920cb0d25d950a9f9/2x",
+      "url_4x": "https://cdn.betterttv.net/emote/64e3b31920cb0d25d950a9f9/4x"
+    }
+  }
+}
