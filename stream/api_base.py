@@ -73,8 +73,8 @@ class APIbase(APIKey):
     async def cancel_delays(self):
         """ Delay execution of callback function """
         for task in self.tasks:
-            task.cancel()
             try:
+                task.cancel()
                 await task
             except asyncio.CancelledError:
                 print("Ended task")
