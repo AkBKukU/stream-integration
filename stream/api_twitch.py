@@ -175,7 +175,7 @@ class APItwitch(APIbase):
         message={
                 "from": chat.user.display_name,
                 "color": color,
-                "text": chat,
+                "text": chat.text,
                 "html": self.message_prep(chat),
                 "donate": chat.bits,
                 "clean": True
