@@ -123,8 +123,8 @@ class APItwitch(APIbase):
         """Gracefully disconnect from Twith API"""
 
         # End pubsub connections
-        await self.pubsub.unlisten(self.uuid_notification)
-        await self.pubsub.unlisten(self.uuid_points)
+        #await self.pubsub.unlisten(self.uuid_notification)
+        #await self.pubsub.unlisten(self.uuid_points)
        # await self.pubsub.unlisten(self.uuid_subs)
         self.eventsub.stop()
 
