@@ -364,7 +364,7 @@ class APIhttp(APIbase):
                 {
                     "timestamp":datetime.now().isoformat().replace(":","-"),
                     "from":data["from"],
-                    "text":data["text"],
+                    "text":data["html"],
                     "color":data["color"],
                     "donate":data["donate"]
                 }
