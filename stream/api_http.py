@@ -360,11 +360,14 @@ class APIhttp(APIbase):
         if len(self.api_chat) > 30:
             self.api_chat.pop(0)
 
+        if "html" in data:
+            data["text"] = data["html"]
+
         self.api_chat.append(
                 {
                     "timestamp":datetime.now().isoformat().replace(":","-"),
                     "from":data["from"],
-                    "text":data["html"],
+                    "text":data["text"],
                     "color":data["color"],
                     "donate":data["donate"]
                 }
