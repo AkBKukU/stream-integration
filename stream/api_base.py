@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from stream.key import APIKey
 
-import sys, os
+import sys, os, re
 import asyncio
 from datetime import datetime
 import json
@@ -188,8 +188,13 @@ class APIbase(APIKey):
             print("  "+attr+": "+value)
 
 
+# Utilities
 
-
+    def string_url_link(self,text):
+        urls = re.findall(r'https?://[\n\S]+\b',text)
+        for url in urls:
+            text = re.sub(url,f"<a target='_new' href='{url}'>{url}</a>",text)
+        return text
 
 
 

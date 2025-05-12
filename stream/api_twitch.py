@@ -21,7 +21,7 @@ from uuid import UUID
 import json
 from pathlib import PurePath
 import glob, os
-import bleach
+import bleach, re
 
 
 class APItwitch(APIbase):
@@ -175,7 +175,8 @@ class APItwitch(APIbase):
         message={
                 "from": chat.user.display_name,
                 "color": color,
-                "text": self.message_prep(chat),
+                "text": chat,
+                "html": self.message_prep(chat),
                 "donate": chat.bits,
                 "clean": True
             }
@@ -209,7 +210,7 @@ class APItwitch(APIbase):
                             )
         return
 
-    def message_prep(self,message_data):
+    def message_prep(self,message_data, html=True):
 
         # https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_d13b51bc41cb4b91a08bbcac18f28395/default/dark/1.0
         pprint(message_data.emotes)
@@ -221,9 +222,12 @@ class APItwitch(APIbase):
 
         text = bleach.clean(message_data.text,tags={})
 
-        if len(emote_replace) > 0:
-            for emote_id, emote_text in emote_replace.items():
-                text = text.replace(emote_text,f"<img src=\"https://static-cdn.jtvnw.net/emoticons/v2/{emote_id}/default/dark/1.0\"/>")
+        if html:
+            text = self.string_url_link(text)
+
+            if len(emote_replace) > 0:
+                for emote_id, emote_text in emote_replace.items():
+                    text = text.replace(emote_text,f"<img src=\"https://static-cdn.jtvnw.net/emoticons/v2/{emote_id}/default/dark/1.0\"/>")
 
         return text
 
@@ -257,7 +261,7 @@ class APItwitch(APIbase):
             line += " gave "+sub_type+" subs to "+event_data.total+" viewers "
         elif hasattr(event_data, "message"):
             # Only: Channel Subscription Message
-            line += " subbed as "+sub_type+" "+sub_len+" and says "+self.message_prep(data.event)
+            line += " subbed as "+sub_type+" "+sub_len+" and says "+self.message_prep(data.event,html=False)
         return line
 
 
