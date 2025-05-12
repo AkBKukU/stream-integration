@@ -223,6 +223,7 @@ class APItwitch(APIbase):
         text = bleach.clean(message_data.text,tags={})
 
         if html:
+            print("HTML Processing")
             text = self.string_url_link(text)
 
             if len(emote_replace) > 0:
