@@ -76,7 +76,7 @@ class APIbase(APIKey):
             try:
                 task.cancel()
                 await task
-            except asyncio.CancelledError:
+            except Exception as e:
                 print("Ended task")
 
 

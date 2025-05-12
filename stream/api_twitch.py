@@ -230,6 +230,7 @@ class APItwitch(APIbase):
                 for emote_id, emote_text in emote_replace.items():
                     text = text.replace(emote_text,f"<img src=\"https://static-cdn.jtvnw.net/emoticons/v2/{emote_id}/default/dark/1.0\"/>")
 
+            print("HTML: " +text)
         return text
 
     def sub_prep(self,event_data):
