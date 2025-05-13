@@ -57,6 +57,7 @@ class APIhttp(APIbase):
 
         self.chat = []
         self.subs = []
+        self.donateall = []
         self.poll = {}
         self.poll_output = {}
         self.poll_valid = []
@@ -76,6 +77,7 @@ class APIhttp(APIbase):
             os.remove(self.json_api_donate)
 
         self.json_chat= '/tmp/stream_http_chat.json'
+        self.json_donateall= '/tmp/stream_http_donateal.json'
         self.json_subs= '/tmp/stream_http_subs.json'
         self.json_poll= '/tmp/stream_http_poll.json'
         self.host = "0.0.0.0"
@@ -284,8 +286,8 @@ class APIhttp(APIbase):
 
     def readJsonSubs(self):
         """ Simple class function to send JSON to browser """
-        if os.path.exists(self.json_subs):
-            return send_file(self.json_subs)
+        if os.path.exists(self.json_donateall):
+            return send_file(self.json_donateall)
         else:
             return send_file("stream/http/blank")
 
@@ -376,17 +378,28 @@ class APIhttp(APIbase):
         # Subs
         if amount.endswith("b"):
             # No action on bits
+            self.donateall.append({"timestamp":str(datetime.now().isoformat()).replace(":","-"),"from":from_name, "text":message})
+
+            if len(self.donateall) > 30:
+                self.donateall.pop(0)
             return
 
         print ("HTTP Sub Recieved")
 
         self.subs.append({"timestamp":str(datetime.now().isoformat()).replace(":","-"),"from":from_name, "text":message})
+        self.donateall.append({"timestamp":str(datetime.now().isoformat()).replace(":","-"),"from":from_name, "text":message})
 
         if len(self.subs) > 30:
             self.subs.pop(0)
 
+        if len(self.donateall) > 30:
+            self.donateall.pop(0)
+
         with open(self.json_subs, 'w', encoding="utf-8") as output:
             output.write(json.dumps(self.subs))
+
+        with open(self.json_donateall, 'w', encoding="utf-8") as output:
+            output.write(json.dumps(self.donateall))
         return
 
     def receive_chat(self,data):
