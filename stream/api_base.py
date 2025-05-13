@@ -25,6 +25,15 @@ class APIbase(APIKey):
         self.actionmap={}
         self.actions={}
         self.actions["print"]=self.action_print
+        self.replays=[]
+        self.delay_callback("replay_check",1000,self.replay_check)
+        self.replay_check()
+
+    def name(self):
+        """Return name of service"""
+        return self.service_name
+
+# Loging and Replay
 
     def log(self,filename,text):
         """logging output for data"""
@@ -33,17 +42,24 @@ class APIbase(APIKey):
         if not os.path.exists(log_path):
             os.makedirs(log_path)
         # Build filename
-        filepath=log_path+"/"+str(datetime.now().isoformat()).replace(":","-")+"_"+filename+".log"
+        filepath=log_path+"/"+str(datetime.now().isoformat()).replace(":","-")+"_"+self.service_name+"_"+filename+".log"
         # Write data
         with open(filepath, 'w', encoding="utf-8") as output:
             output.write(text)
         return
 
+    def replay_check(self):
+        print("replay check")
+        try:
+            if not os.path.exists("./replay"):
+                os.makedirs("./replay")
+        except Exception as e:
+            print(f"Error making directory: {"./replay"}")
+            sys.exit(1)
 
-    def name(self):
-        """Return name of service"""
-        return self.service_name
 
+    def register_replay(self,replay_name):
+        return
 
 # Internal Function Timing
 

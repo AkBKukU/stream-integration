@@ -126,7 +126,7 @@ class APItwitch(APIbase):
         #await self.pubsub.unlisten(self.uuid_notification)
         #await self.pubsub.unlisten(self.uuid_points)
        # await self.pubsub.unlisten(self.uuid_subs)
-        self.eventsub.stop()
+        await self.eventsub.stop()
 
         # End chat
         self.chat.stop()
