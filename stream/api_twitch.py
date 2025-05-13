@@ -85,38 +85,15 @@ class APItwitch(APIbase):
 
 
         self.chat.register_event(ChatEvent.MESSAGE, self.callback_chat)
-        self.delay_callback("log_replay", 1000, self.log_replay)
+
+        self.replay_register("callback_chat_data", self.callback_chat, dictConvert=True)
+        self.replay_register("callback_channel_chat_notification", self.callback_channel_chat_notification, dictConvert=True)
+        self.replay_register("callback_channel_points_custom_reward_redemption_add", self.callback_channel_points_custom_reward_redemption_add, dictConvert=True)
+
+        self.delay_callback("replay_check",1000,self.replay_check)
         self.chat.start()
 
         return
-
-    async def log_replay(self):
-        # Check for point redeem
-        for file in glob.glob("test-twitch/*_points.log"):
-            if os.path.isfile(file):
-                with open(file, 'r') as f:
-                    data = json.load(f)
-                    await self.callback_points("1337", data)
-                os.remove(file)
-        
-        # Check for bit cheer
-        for file in glob.glob("test-twitch/*_bits.log"):
-            if os.path.isfile(file):
-                with open(file, 'r') as f:
-                    data = json.load(f)
-                    await self.callback_bits("1337", data)
-                os.remove(file)
-
-        # Check for subs
-        for file in glob.glob("test-twitch/*_subs.log"):
-            if os.path.isfile(file):
-                with open(file, 'r') as f:
-                    print("Sending Sub")
-                    data = json.load(f)
-                    await self.callback_subs("1337", data)
-                os.remove(file)
-
-        self.delay_callback("log_replay", 1000, self.log_replay)
 
 
     async def disconnect(self):
@@ -161,6 +138,11 @@ class APItwitch(APIbase):
         chat_data["emotes"] = chat.emotes
         chat_data["bits"] = chat.bits
         chat_data["sent_timestamp"] = chat.sent_timestamp
+        chat_data["user"] = {}
+        chat_data["user"]["color"] = chat.user.color
+        chat_data["user"]["name"] = chat.user.name
+        chat_data["user"]["display_name"] = chat.user.display_name
+        chat_data["user"]["mod"] = chat.user.mod
         self.log("callback_chat_data",json.dumps(chat_data))
         if chat.user.color == None:
              # Create random colors from names
@@ -321,7 +303,8 @@ class APItwitch(APIbase):
         ## Triggers
         # Resubsfrom
 
-        self.log("callback_channel_points_custom_reward_redemption_add",json.dumps(data.to_dict()))
+        if hasattr(data,"to_dict"):
+            self.log("callback_channel_points_custom_reward_redemption_add",json.dumps(data.to_dict()))
 
 
         # Send data to receivers
@@ -341,7 +324,8 @@ class APItwitch(APIbase):
         ## Triggers
         # Resubs
 
-        self.log("callback_channel_chat_notification",json.dumps(data.to_dict()))
+        if hasattr(data,"to_dict"):
+            self.log("callback_channel_chat_notification",json.dumps(data.to_dict()))
 
         # self.emit_donate(data.event.user_name,
         #                     str(data.event.tier)+"s",

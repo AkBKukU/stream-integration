@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # Production Imports
 from stream.api_twitch import APItwitch
 #from stream.api_youtube import APIyoutube

@@ -6,6 +6,7 @@ from flask import request
 from flask import send_file
 from flask import redirect
 from flask import make_response
+import logging
 
 from multiprocessing import Process
 
@@ -27,6 +28,9 @@ class APIhttp(APIbase):
         self.service_name = "HTTP"
 
         self.app = Flask("The Web: Now with 100% More OOP")
+        self.app.logger.disabled = True
+        log = logging.getLogger('werkzeug')
+        log.disabled = True
 
         # Define routes in class to use with flask
         self.app.add_url_rule('/','home', self.index)
@@ -94,7 +98,6 @@ class APIhttp(APIbase):
         # If there are self.poll_threshold identical messages in self.poll start poll and add
         # message to valid after, if there are 10 other identical messages add new valid option
         # and display if voter messages after voting ignore, unless valid vote number
-        print("####### Poll Check")
 
         poll_count={}
         for k, v in self.poll.items():
@@ -262,6 +265,7 @@ class APIhttp(APIbase):
         """ Simple class function to send HTML to browser """
         return send_file("stream/http/chat-read.html")
 
+
     def readCss(self):
         """ Simple class function to send HTML to browser """
         return send_file("stream/http/read.css")
@@ -272,11 +276,17 @@ class APIhttp(APIbase):
 
     def readJsonChat(self):
         """ Simple class function to send JSON to browser """
-        return send_file(self.json_chat)
+        if os.path.exists(self.json_chat):
+            return send_file(self.json_chat)
+        else:
+            return send_file("stream/http/blank")
 
     def chatJsonChat(self):
         """ Simple class function to send JSON to browser """
-        return send_file(self.json_chat)
+        if os.path.exists(self.json_chat):
+            return send_file(self.json_chat)
+        else:
+            return send_file("stream/http/blank")
 
     def window(self):
         """ Simple class function to send HTML to browser """
@@ -292,27 +302,45 @@ class APIhttp(APIbase):
 
     def windowJsonChat(self):
         """ Simple class function to send JSON to browser """
-        return send_file(self.json_chat)
+        if os.path.exists(self.json_chat):
+            return send_file(self.json_chat)
+        else:
+            return send_file("stream/http/blank")
 
     def windowJsonSubs(self):
         """ Simple class function to send JSON to browser """
-        return send_file(self.json_subs)
+        if os.path.exists(self.json_subs):
+            return send_file(self.json_subs)
+        else:
+            return send_file("stream/http/blank")
 
     def windowJsonPoll(self):
         """ Simple class function to send JSON to browser """
-        return send_file(self.json_poll)
+        if os.path.exists(self.json_poll):
+            return send_file(self.json_poll)
+        else:
+            return send_file("stream/http/blank")
 
     def apiChat(self):
         """ Simple class function to send JSON to browser """
-        return send_file(self.json_api_chat)
+        if os.path.exists(self.json_api_chat):
+            return send_file(self.json_api_chat)
+        else:
+            return send_file("stream/http/blank")
 
     def apiDonate(self):
         """ Simple class function to send JSON to browser """
-        return send_file(self.json_api_donate)
+        if os.path.exists(self.json_api_donate):
+            return send_file(self.json_api_donate)
+        else:
+            return send_file("stream/http/blank")
 
     def apiInteract(self):
         """ Simple class function to send JSON to browser """
-        return send_file(self.json_api_interact)
+        if os.path.exists(self.json_api_interact):
+            return send_file(self.json_api_interact)
+        else:
+            return send_file("stream/http/blank")
 
     def receive_donate(self,from_name,amount,message,benefits=None):
         """Output message to CLI for chat"""

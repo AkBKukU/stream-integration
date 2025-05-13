@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 from stream.key import APIKey
 
-import sys, os, re
+import sys, os, re, glob, shutil
 import asyncio
 from datetime import datetime
 import json
+
+from attrdict import AttrDict
 
 class APIbase(APIKey):
     """API Base for signal emitters
@@ -26,8 +28,6 @@ class APIbase(APIKey):
         self.actions={}
         self.actions["print"]=self.action_print
         self.replays=[]
-        self.delay_callback("replay_check",1000,self.replay_check)
-        self.replay_check()
 
     def name(self):
         """Return name of service"""
@@ -48,17 +48,44 @@ class APIbase(APIKey):
             output.write(text)
         return
 
-    def replay_check(self):
-        print("replay check")
+    async def replay_check(self):
+
+        path="./replay/"+self.service_name
         try:
-            if not os.path.exists("./replay"):
-                os.makedirs("./replay")
+            if not os.path.exists(path):
+                os.makedirs(path)
         except Exception as e:
-            print(f"Error making directory: {"./replay"}")
+            print(f"Error making directory: {path}")
             sys.exit(1)
 
+        for replay in self.replays:
+            for file in glob.glob(path+"/"+replay["match"]+"/*"+replay["match"]+"*"):
+                if os.path.isfile(file):
 
-    def register_replay(self,replay_name):
+                    print("Replaying log: "+file)
+                    with open(file, 'r') as f:
+                        data = json.load(f)
+                        if replay["dict_convert"]:
+                            data = AttrDict(data)
+
+                        await replay["callback"](data)
+
+                    shutil.move(file,"./replay/")
+
+
+        self.delay_callback("replay_check",1000,self.replay_check)
+
+
+    def replay_register(self,match,callback,dictConvert=False):
+        # {Log match string, callback, dict convert}
+        path="./replay/"+self.service_name+"/"+match
+        try:
+            if not os.path.exists(path):
+                os.makedirs(path)
+        except Exception as e:
+            print(f"Error making directory: {path}")
+            sys.exit(1)
+        self.replays.append({"match":match,"callback":callback,"dict_convert":dictConvert})
         return
 
 # Internal Function Timing
