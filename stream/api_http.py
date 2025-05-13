@@ -42,6 +42,7 @@ class APIhttp(APIbase):
         self.app.add_url_rule('/read/','read', self.read)
         self.app.add_url_rule('/read/read.css','read-css', self.readCss)
         self.app.add_url_rule('/read/chat.json','read-data', self.readJsonChat)
+        self.app.add_url_rule('/read/subs.json','read-subs', self.readJsonSubs)
         self.app.add_url_rule('/window/','window', self.window)
         self.app.add_url_rule('/window/window.css','window-css', self.windowCss)
         self.app.add_url_rule('/window/window.js','window-js', self.windowJs)
@@ -278,6 +279,13 @@ class APIhttp(APIbase):
         """ Simple class function to send JSON to browser """
         if os.path.exists(self.json_chat):
             return send_file(self.json_chat)
+        else:
+            return send_file("stream/http/blank")
+
+    def readJsonSubs(self):
+        """ Simple class function to send JSON to browser """
+        if os.path.exists(self.json_subs):
+            return send_file(self.json_subs)
         else:
             return send_file("stream/http/blank")
 

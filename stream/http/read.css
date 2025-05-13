@@ -10,20 +10,15 @@ body {
 
 #chat-list
 {
+  display:block;
   padding-left: 0px;
   padding-bottom: 1em;
   font-family: sans-serif;
-  overflow: hidden;
+  overflow:scroll;
   color: white;
   list-style-type: none;
 
-  height: calc(100vh + 1000px);
-  margin-top: calc(-1000px - 3em);
-  width: calc(100vw - 1em);
 
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-start;
 }
 
 ul > :first-child
@@ -34,3 +29,33 @@ ul > :first-child
 a {
 	color: #fff;
 }
+
+img
+{
+  height: 1.25em;
+  margin:  0px -1px;
+  vertical-align: bottom;
+}
+
+#donate-list
+{
+  display:block;
+  padding-left: 0px;
+  padding-bottom: 1em;
+  font-family: sans-serif;
+  overflow:scroll;
+  color: white;
+  list-style-type: none;
+
+
+  border-bottom: solid 3px #f00;
+}
+
+#donate-list .name
+{
+  margin-right: 1em;
+  color: red;
+}
+
+#donate-list li {list-style-type: none;padding-bottom: 0.5em;}
+#donate-list li:nth-child(even) {background-color:#252525;}

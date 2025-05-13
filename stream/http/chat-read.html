@@ -17,7 +17,7 @@ function json_read(chat_data)
     chat_list = document.getElementById("chat-list");
     chat_list.textContent = '';
 
-    chat_data.forEach((c) => {
+    chat_data.reverse().forEach((c) => {
         li = document.createElement("li");
 
         var name = document.createElement("span");
@@ -38,11 +38,50 @@ function json_read(chat_data)
 
 }
 
+function sub_read(sub_data)
+{
+    if(sub_data.length ==0)
+    {
+      return
+    }
+
+    chat_list = document.getElementById("donate-list");
+    chat_list.textContent = '';
+
+    if (document.querySelector('#donatelimit').checked)
+    {
+      disp_limit = 3;
+    }else{
+      disp_limit = 50;
+    }
+
+    sub_data.reverse().slice(0,disp_limit).forEach((c) => {
+        li = document.createElement("li");
+
+
+        var name = document.createElement("span");
+        name.innerHTML = c['from'];
+        name.classList.add("name");
+        li.appendChild(name)
+
+        var text = document.createElement("span");
+        text.innerHTML = c['text'];
+        li.appendChild(text)
+
+        chat_list.appendChild(li)
+    });
+
+}
+
 function data_fetch()
 {
   fetch('chat.json')
     .then((response) => response.json())
     .then((data) => json_read(data));
+
+  fetch('subs.json')
+    .then((response) => response.json())
+    .then((data) => sub_read(data));
 
   setTimeout(data_fetch,1000)
 }
@@ -51,8 +90,11 @@ setTimeout(data_fetch,1000)
     </script>
 </head>
 <body>
-    <div id="chat-container">
+        <input type="checkbox" id="donatelimit" name="donatelimit" checked />
+        <label for="donatelimit">Shorten Donates</label>
+        <ul id="donate-list">
+        </ul>
         <ul id="chat-list">
         </ul>
-    </div>
+
 </body>
