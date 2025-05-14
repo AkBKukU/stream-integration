@@ -40,6 +40,9 @@ class APIhttp(APIbase):
         self.app.add_url_rule('/chat/','chat', self.chat)
         self.app.add_url_rule('/chat/chat.json','data', self.chatJsonChat)
         self.app.add_url_rule('/read/','read', self.read)
+        self.app.add_url_rule('/dono/','dono', self.dono)
+        self.app.add_url_rule('/dono/subs.json','dono-subs', self.donoJsonSubs)
+        self.app.add_url_rule('/dono/dono.css','dono-css', self.donoCss)
         self.app.add_url_rule('/read/read.css','read-css', self.readCss)
         self.app.add_url_rule('/read/chat.json','read-data', self.readJsonChat)
         self.app.add_url_rule('/read/subs.json','read-subs', self.readJsonSubs)
@@ -262,7 +265,16 @@ class APIhttp(APIbase):
 <a href="/chat/"><h2>Chat</h2></a>
 <a href="/read/"><h2>Read</h2></a>
 <a href="/window/"><h2>Window</h2></a>
+<a href="/dono/"><h2>Dono List</h2></a>
         """
+
+    def dono(self):
+        """ Simple class function to send HTML to browser """
+        return send_file("stream/http/dono-list.html")
+
+    def donoCss(self):
+        """ Simple class function to send HTML to browser """
+        return send_file("stream/http/dono.css")
 
     def read(self):
         """ Simple class function to send HTML to browser """
@@ -285,6 +297,13 @@ class APIhttp(APIbase):
             return send_file("stream/http/blank")
 
     def readJsonSubs(self):
+        """ Simple class function to send JSON to browser """
+        if os.path.exists(self.json_donateall):
+            return send_file(self.json_donateall)
+        else:
+            return send_file("stream/http/blank")
+
+    def donoJsonSubs(self):
         """ Simple class function to send JSON to browser """
         if os.path.exists(self.json_donateall):
             return send_file(self.json_donateall)
@@ -380,7 +399,7 @@ class APIhttp(APIbase):
             # No action on bits
             self.donateall.append({"timestamp":str(datetime.now().isoformat()).replace(":","-"),"from":from_name, "text":message})
 
-            if len(self.donateall) > 30:
+            if len(self.donateall) > 50:
                 self.donateall.pop(0)
             return
 
@@ -392,7 +411,7 @@ class APIhttp(APIbase):
         if len(self.subs) > 30:
             self.subs.pop(0)
 
-        if len(self.donateall) > 30:
+        if len(self.donateall) > 50:
             self.donateall.pop(0)
 
         with open(self.json_subs, 'w', encoding="utf-8") as output:
