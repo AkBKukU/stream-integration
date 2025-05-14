@@ -3,20 +3,25 @@
 #donate-list
 {
   display:block;
-  padding-left: 0px;
+  padding-left: 0em;
   padding-bottom: 1em;
+  margin-top: 5em;
   font-family: sans-serif;
-  overflow:scroll;
+  overflow:hidden;
   color: white;
   list-style-type: none;
 
+    /*Box Cosmetic*/
+    background-color: rgba(1, 0, 0, 0.85);
+    border-left: 20px solid #F00;
 }
 
-#donate-list .name
-{
-  margin-right: 1em;
-  color: red;
-}
 
-#donate-list li {list-style-type: none;padding-bottom: 0.5em;}
-#donate-list li:nth-child(even) {background-color:#252525;}
+#donate-list li {
+list-style-type: none;padding-bottom: 0.5em;
+    border-bottom: 1px solid #444;
+  padding-left: 1em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+
+}
