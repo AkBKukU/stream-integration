@@ -1,0 +1,22 @@
+
+
+#donate-list
+{
+  display:block;
+  padding-left: 0px;
+  padding-bottom: 1em;
+  font-family: sans-serif;
+  overflow:scroll;
+  color: white;
+  list-style-type: none;
+
+}
+
+#donate-list .name
+{
+  margin-right: 1em;
+  color: red;
+}
+
+#donate-list li {list-style-type: none;padding-bottom: 0.5em;}
+#donate-list li:nth-child(even) {background-color:#252525;}
