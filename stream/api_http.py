@@ -401,6 +401,9 @@ class APIhttp(APIbase):
 
             if len(self.donateall) > 50:
                 self.donateall.pop(0)
+
+            with open(self.json_donateall, 'w', encoding="utf-8") as output:
+                output.write(json.dumps(self.donateall))
             return
 
         print ("HTTP Sub Recieved")
