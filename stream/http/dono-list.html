@@ -23,6 +23,11 @@ function sub_read(sub_data)
     sub_data.reverse().slice(0,disp_limit).forEach((c) => {
         li = document.createElement("li");
 
+        var name = document.createElement("span");
+        name.innerHTML = c['from'];
+        name.classList.add("name");
+        li.appendChild(name)
+
         var text = document.createElement("span");
         text.innerHTML = c['text'];
         li.appendChild(text)

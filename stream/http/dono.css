@@ -25,3 +25,10 @@ list-style-type: none;padding-bottom: 0.5em;
   padding-bottom: 0.25em;
 
 }
+
+#donate-list .name
+{
+  margin-right: 1em;
+  color: white;
+  font-weight: bold;
+}
