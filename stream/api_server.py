@@ -57,7 +57,7 @@ class APIserver(APIbase):
 
 
             self.delay_callback("get_chat", self.update_rate, self.get_chat)
-        except urllib.error.HTTPError as err:
+        except Exception as e:
             self.delay_callback("get_chat", self.update_rate, self.get_chat)
             return
 
