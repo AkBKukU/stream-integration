@@ -247,18 +247,18 @@ class APIyoutube(APIbase):
             color="#"
             letters=str(c['authorDetails']['displayName']).lower()[:3]
             print(letters)
-            for col in list(letters.encode('ascii')):
+            for col in list(letters.encode('ascii',errors='ignore')):
                 col=(col-80)
                 col=col*6
                 color+=str(hex(col))[2:]
 
             message={
-                    "from": c['authorDetails']['displayName'],
+                    "from": c['authorDetails']['displayName'].encode('utf-8',errors='ignore').decode('utf-8'),
                     "color": color,
                     "text": str(c['snippet']['displayMessage']),
                     "donate": 0 # not currently used
                 }
-            self.log("callback_chat",json.dumps(message))
+            #self.log("callback_chat",json.dumps(message))
             self.emit_chat(message)
 
             # Handle superchats
@@ -271,7 +271,7 @@ class APIyoutube(APIbase):
                     value = int(value)
 
                 # Build name to also state donate value
-                name = c['authorDetails']['displayName']
+                name = c['authorDetails']['displayName'].encode('utf-8',errors='ignore').decode('utf-8')
                 name += " gave " + str(value) + " " + Currency(c['snippet']['superChatDetails']['currency']).currency_name + " and "
 
                 # Send data to receivers
