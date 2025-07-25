@@ -57,7 +57,7 @@ class APIserver(APIbase):
 
 
             self.delay_callback("get_chat", self.update_rate, self.get_chat)
-        except urllib.error.HTTPError as err:
+        except Exception as e:
             self.delay_callback("get_chat", self.update_rate, self.get_chat)
             return
 
@@ -87,7 +87,7 @@ class APIserver(APIbase):
 
             self.delay_callback("get_donate", self.update_rate, self.get_donate)
 
-        except urllib.error.HTTPError as err:
+        except Exception as e:
             self.delay_callback("get_donate", self.update_rate, self.get_donate)
             return
 
@@ -118,7 +118,7 @@ class APIserver(APIbase):
 
             self.delay_callback("get_interact", self.update_rate, self.get_interact)
 
-        except urllib.error.HTTPError as err:
+        except Exception as e:
             self.delay_callback("get_interact", self.update_rate, self.get_interact)
             return
 
