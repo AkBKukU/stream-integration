@@ -24,7 +24,11 @@ class OUTDectalk(OUTBase):
 
         # Pre/post boilerplate to standardize DECTalk options
         prefix="[:punct none]"
-        postfix=str('[:nh][:dv ap 90 pr 0].[:rate 140]END OF LINE.[:np][:pp 0 :cp 0][:rate 200][:say line][:punct none][:pitch 35][:phoneme off][:volume set 33]\r\n')
+        if "[:nh]" in text:
+            postfix=str('[:nh][:dv ap 90 pr 0].[:rate 140]BY YOUR COMMAND.[:np][:pp 0 :cp 0][:rate 200][:say line][:punct none][:pitch 35][:phoneme off][:volume set 33]\r\n')
+        else:
+            postfix=str('[:nh][:dv ap 90 pr 0].[:rate 140]END OF LINE.[:np][:pp 0 :cp 0][:rate 200][:say line][:punct none][:pitch 35][:phoneme off][:volume set 33]\r\n')
+
 
         # Send data to DECTalk
         with serial.Serial(self.serial_port,9600,timeout=1) as ser:
@@ -47,6 +51,7 @@ class OUTDectalk(OUTBase):
         text = text.replace(":comma", ":rate")
         text = re.sub(":volume\s+set", ":np] . Volume Override[:rate ",text)
         text = text.replace("%p","[:phoneme arpabet speak on]").replace("%P","[:phoneme arpabet speak on]")
+        text = text.replace("%c","[:nh][:dv ap 90 pr 0]").replace("%C","[:nh][:dv ap 90 pr 0]")
 
         return text
 
