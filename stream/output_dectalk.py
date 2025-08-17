@@ -47,6 +47,7 @@ class OUTDectalk(OUTBase):
         text = text.replace("google", "")
         text = text.replace("alexa", "")
         text = text.replace("siri", "")
+        text = text.replace("cylon", "seyelon")
         text = text.replace(":period", ":rate")
         text = text.replace(":comma", ":rate")
         text = re.sub(":volume\s+set", ":np] . Volume Override[:rate ",text)
