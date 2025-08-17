@@ -51,7 +51,7 @@ class OUTDectalk(OUTBase):
         text = text.replace(":comma", ":rate")
         text = re.sub(":volume\s+set", ":np] . Volume Override[:rate ",text)
         text = text.replace("%p","[:phoneme arpabet speak on]").replace("%P","[:phoneme arpabet speak on]")
-        text = text.replace("%c","[:nh][:dv ap 90 pr 0]").replace("%C","[:nh][:dv ap 90 pr 0]")
+        text = text.replace("%c","[:nh][:dv ap 90 pr 0][:rate 140]").replace("%C","[:nh][:dv ap 90 pr 0][:rate 140]")
 
         return text
 
