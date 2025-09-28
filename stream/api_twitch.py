@@ -331,7 +331,7 @@ class APItwitch(APIbase):
         #                     str(data.event.tier)+"s",
         #                     self.sub_prep(data.event)
         #                     )
-        sub_types = ["sub","resub","community_sub_gift","gift_paid_upgrade","prime_paid_upgrade","pay_it_forward"]
+        sub_types = ["sub","resub","community_sub_gift","gift_paid_upgrade","prime_paid_upgrade","pay_it_forward","sub_gift"]
 
         if data.event.notice_type in sub_types:
 
