@@ -74,7 +74,6 @@ class OUTDectalk(OUTBase):
             try:
                 with open("decktalk_replace.json", newline='') as jsonfile:
                     data = json.load(jsonfile)
-                    pprint(data)
             except Exception as e:
                 print(f"file no load")
                 data = {}
@@ -121,6 +120,7 @@ class OUTDectalk(OUTBase):
             try:
                 with open("decktalk_replace.json", newline='') as jsonfile:
                     data = json.load(jsonfile)
+                    pprint(data)
             except Exception as e:
                 data = {}
         else:
