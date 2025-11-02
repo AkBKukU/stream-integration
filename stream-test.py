@@ -81,7 +81,7 @@ twitch = APItwitch(
 twitch.register_chat(outtest.receive_chat)
 twitch.register_chat(http.receive_chat)
 twitch.register_donate(http.receive_donate)
-# #twitch.register_interact(outcall.receive_interact)
+twitch.register_interact(outtest.receive_interact)
 # twitch.register_donate(outtest.receive_donate)
 
 #youtube.register_chat(http.receive_chat)
