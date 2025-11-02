@@ -16,23 +16,27 @@ class OUTDectalk(OUTBase):
         self.serial_port = serial_port
         self.write("DECTalk is now on line")
 
+    def prefix(self,text):
+        prefix="[:punct none]"
+        return prefix
+
+    def postfix(self,text):
+        if "[:nh]" in text:
+            postfix=str('[:nh][:dv ap 90 pr 0].[:rate 140]BY YOUR COMMAND.[:np][:pp 0 :cp 0][:rate 200][:say line][:punct none][:pitch 35][:phoneme off][:volume set 33]\r\n')
+        else:
+            postfix=str('[:nh][:dv ap 90 pr 0].[:rate 140]END OF LINE.[:np][:pp 0 :cp 0][:rate 200][:say line][:punct none][:pitch 35][:phoneme off][:volume set 33]\r\n')
+        return postfix
+
+
     def write(self,text):
         """Write data to serial port to DECTalk"""
 
         # Santize text
         text = self.clean(text)
 
-        # Pre/post boilerplate to standardize DECTalk options
-        prefix="[:punct none]"
-        if "[:nh]" in text:
-            postfix=str('[:nh][:dv ap 90 pr 0].[:rate 140]BY YOUR COMMAND.[:np][:pp 0 :cp 0][:rate 200][:say line][:punct none][:pitch 35][:phoneme off][:volume set 33]\r\n')
-        else:
-            postfix=str('[:nh][:dv ap 90 pr 0].[:rate 140]END OF LINE.[:np][:pp 0 :cp 0][:rate 200][:say line][:punct none][:pitch 35][:phoneme off][:volume set 33]\r\n')
-
-
         # Send data to DECTalk
         with serial.Serial(self.serial_port,9600,timeout=1) as ser:
-            ser.write( bytes(prefix+str(text)+postfix,'ascii',errors='ignore') )
+            ser.write( bytes(self.prefix()+str(text)+self.postfix(),'ascii',errors='ignore') )
         return
 
 
@@ -82,4 +86,11 @@ class OUTDectalk(OUTBase):
         # Note: I don't use the point rewards for DECTalk currently
         if kind == "API Test":
             self.write(from_name+" did "+kind+" and said "+message)
+        return
+
+
+    def receive_chat(self,data):
+        """Output message to CLI for chat"""
+
+        self.write(data["text"])
         return

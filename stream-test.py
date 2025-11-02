@@ -12,6 +12,9 @@ from stream.api_twitch import APItwitch
 #from stream.api_twitch_test import APItwitchTest as APItwitch
 #from stream.output_base import OUTBase as OUTDectalk
 
+# Use Software DECTalk
+from stream.output_dectalk_software import OUTDectalkSoftware as OUTDectalk
+
 from stream.api_http import APIhttp
 #from stream.api_footpedal import APIfootpedal
 
@@ -55,7 +58,7 @@ def exit_handler(sig, frame):
 
 
 # Setup modules
-#outtest = OUTDectalk()
+outtest = OUTDectalk()
 #outtest.actionmap_load("actionmap.json")
 #outsound = OUTSound()
 #outsound.actionmap_load("actionmap_sound.json")
@@ -75,7 +78,7 @@ twitch = APItwitch(
 
 # Connect modules
 # twitch.register_interact(outtest.receive_interact)
-# twitch.register_chat(outtest.receive_chat)
+twitch.register_chat(outtest.receive_chat)
 twitch.register_chat(http.receive_chat)
 twitch.register_donate(http.receive_donate)
 # #twitch.register_interact(outcall.receive_interact)
