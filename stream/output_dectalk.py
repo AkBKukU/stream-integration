@@ -24,10 +24,9 @@ class OUTDectalk(OUTBase):
 
     def postfix(self,text):
         if "[:nh]" in text:
-            postfix=str('[:nh][:dv ap 90 pr 0].[:rate 140]BY YOUR COMMAND.[:np][:pp 0 :cp 0][:rate 200][:say line][:punct none][:pitch 35][:phoneme off][:volume set 33]\r\n')
+            return str('[:nh][:dv ap 90 pr 0].[:rate 140]BY YOUR COMMAND.[:np][:pp 0 :cp 0][:rate 200][:say line][:punct none][:pitch 35][:phoneme off][:volume set 33]\r\n')
         else:
-            postfix=str('[:nh][:dv ap 90 pr 0].[:rate 140]END OF LINE.[:np][:pp 0 :cp 0][:rate 200][:say line][:punct none][:pitch 35][:phoneme off][:volume set 33]\r\n')
-        return postfix
+            return str('[:nh][:dv ap 90 pr 0].[:rate 140]END OF LINE.[:np][:pp 0 :cp 0][:rate 200][:say line][:punct none][:pitch 35][:phoneme off][:volume set 33]\r\n')
 
 
     def write(self,text):
@@ -39,7 +38,7 @@ class OUTDectalk(OUTBase):
 
         # Send data to DECTalk
         with serial.Serial(self.serial_port,9600,timeout=1) as ser:
-            ser.write( bytes(self.prefix()+str(text)+self.postfix(),'ascii',errors='ignore') )
+            ser.write( bytes(self.prefix(text)+str(text)+self.postfix(text),'ascii',errors='ignore') )
         return
 
 

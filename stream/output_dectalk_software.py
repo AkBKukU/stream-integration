@@ -16,6 +16,6 @@ class OUTDectalkSoftware(OUTDectalk):
         text = self.clean(text)
 
         # Send data to DECTalk
-        subprocess.run(["say", "-a", text])
+        subprocess.run(["say", "-a", self.prefix(text)+str(text)+self.postfix(text)])
         return
 
