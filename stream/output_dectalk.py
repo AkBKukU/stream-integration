@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 from stream.output_base import OUTBase
 
-import serial
 import re
 
 class OUTDectalk(OUTBase):
@@ -31,6 +30,7 @@ class OUTDectalk(OUTBase):
     def write(self,text):
         """Write data to serial port to DECTalk"""
 
+        import serial
         # Santize text
         text = self.clean(text)
 
