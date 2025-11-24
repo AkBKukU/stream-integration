@@ -93,6 +93,17 @@ class APItwitch(APIbase):
         self.delay_callback("replay_check",1000,self.replay_check)
         self.chat.start()
 
+        self.badge_custom={}
+        for badge in await self.api.get_chat_badges(self.user.id):
+            self.badge_custom[badge.set_id]=badge.to_dict()
+
+        self.log("get_chat_badges",json.dumps(badge_custom))
+
+        self.badge_global={}
+        for badge in await self.api.get_global_chat_badges():
+            self.badge_global[badge.set_id]=badge.to_dict()
+        self.log("get_global_chat_badges",json.dumps(badge_global))
+
         return
 
 
@@ -143,6 +154,7 @@ class APItwitch(APIbase):
         chat_data["user"]["name"] = chat.user.name
         chat_data["user"]["display_name"] = chat.user.display_name
         chat_data["user"]["mod"] = chat.user.mod
+        chat_data["user"]["badges"] = chat.user.badges
         self.log("callback_chat_data",json.dumps(chat_data))
         if chat.user.color == None:
              # Create random colors from names
