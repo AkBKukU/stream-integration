@@ -440,6 +440,7 @@ class APIhttp(APIbase):
                     "from":data["from"],
                     "text":data["text"],
                     "color":data["color"],
+                    "icons":data["icons"],
                     "donate":data["donate"]
                 }
             )

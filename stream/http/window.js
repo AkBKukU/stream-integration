@@ -14,6 +14,12 @@ function chat_read(chat_data)
 
     chat_data.forEach((c) => {
         li = document.createElement("li");
+        c["icons"].forEach((i) => {
+            var img = document.createElement("img");
+            img.src=i;
+            img.classList.add("icon");
+            li.appendChild(img);
+        });
 
         var name = document.createElement("span");
         name.innerHTML = c['from'];

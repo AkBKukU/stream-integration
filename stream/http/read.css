@@ -35,6 +35,12 @@ img
   margin:  0px -1px;
   vertical-align: bottom;
 }
+.icon
+{
+  height: 1.25em;
+  margin:  0px 1px;
+  vertical-align: bottom;
+}
 
 #donate-list
 {

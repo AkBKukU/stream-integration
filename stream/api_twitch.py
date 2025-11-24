@@ -97,13 +97,12 @@ class APItwitch(APIbase):
         for badge in await self.api.get_chat_badges(self.user.id):
             self.badge_custom[badge.set_id]=badge.to_dict()
 
-        self.log("get_chat_badges",json.dumps(badge_custom))
+        self.log("get_chat_badges",json.dumps(self.badge_custom))
 
         self.badge_global={}
         for badge in await self.api.get_global_chat_badges():
             self.badge_global[badge.set_id]=badge.to_dict()
-        self.log("get_global_chat_badges",json.dumps(badge_global))
-
+        self.log("get_global_chat_badges",json.dumps(self.badge_global))
         return
 
 
@@ -154,7 +153,7 @@ class APItwitch(APIbase):
         chat_data["user"]["name"] = chat.user.name
         chat_data["user"]["display_name"] = chat.user.display_name
         chat_data["user"]["mod"] = chat.user.mod
-        chat_data["user"]["badges"] = chat.user.badges
+        chat_data["user"]["icons"] = self.badge_prep(chat.user.badges)
         self.log("callback_chat_data",json.dumps(chat_data))
         if chat.user.color == None:
              # Create random colors from names
@@ -172,6 +171,7 @@ class APItwitch(APIbase):
                 "text": chat.text,
                 "html": self.message_prep(chat),
                 "donate": chat.bits,
+                "icons": self.badge_prep(chat.user.badges),
                 "clean": True
             }
 
@@ -203,6 +203,17 @@ class APItwitch(APIbase):
                             data['data']['chat_message']
                             )
         return
+
+
+    def badge_prep(self,badge_data):
+        badge_urls=[]
+        for key, value in badge_data.items():
+            for badge in self.badge_global[key]["versions"]:
+                if badge["id"] == value:
+                    badge_urls.append(badge["image_url_2x"])
+
+        return badge_urls
+
 
     def message_prep(self,message_data, html=True):
 
