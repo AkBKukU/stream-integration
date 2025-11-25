@@ -206,6 +206,8 @@ class APItwitch(APIbase):
 
 
     def badge_prep(self,badge_data):
+        if badge_data is None:
+            return
         badge_urls=[]
         for key, value in badge_data.items():
             for badge in self.badge_global[key]["versions"]:

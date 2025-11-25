@@ -28,11 +28,15 @@ class APIhttp(APIbase):
         self.service_name = "HTTP"
 
         self.app = Flask("The Web: Now with 100% More OOP")
-        self.app.logger.disabled = True
-        log = logging.getLogger('werkzeug')
-        log.disabled = True
+        #self.app.logger.disabled = True
+        #log = logging.getLogger('werkzeug')
+        #log.disabled = True
 
         # Define routes in class to use with flask
+        self.nav={}
+        self.nav["Chat"]='/chat/'
+        self.nav["Read"]='/read/'
+        self.nav["Window"]='/window/'
         self.app.add_url_rule('/','home', self.index)
         self.app.add_url_rule('/api/donate.json','api-donate', self.apiDonate)
         self.app.add_url_rule('/api/chat.json','api-chat', self.apiChat)
@@ -99,6 +103,18 @@ class APIhttp(APIbase):
         r.headers["Expires"] = "0"
         r.headers['Cache-Control'] = 'public, max-age=0'
         return r
+
+    def receive_routes(self,routes):
+        for route in routes:
+            self.add_route(route["uri"],route["name"],route["callback"],route["major"])
+
+
+    def add_route(self,uri,name,callback,major=False):
+
+        if major:
+            self.nav[name]=uri
+
+        self.app.add_url_rule(uri,name, callback)
 
     async def poll_check(self):
         # If there are self.poll_threshold identical messages in self.poll start poll and add
@@ -261,6 +277,12 @@ class APIhttp(APIbase):
 
     def index(self):
         """ Simple class function to send HTML to browser """
+        nav_html="<h1>Tech Tangents Livestream</h1>"
+        for key, value in self.nav.items():
+            nav_html+=f"<a href=\"{value}\"><h2>{key}</h2></a>"
+
+        return nav_html
+
         return """
 <a href="/chat/"><h2>Chat</h2></a>
 <a href="/read/"><h2>Read</h2></a>

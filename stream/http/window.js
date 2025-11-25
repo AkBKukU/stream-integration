@@ -14,7 +14,7 @@ function chat_read(chat_data)
 
     chat_data.forEach((c) => {
         li = document.createElement("li");
-        c["icons"].forEach((i) => {
+        if ('icons' in c && c["icons"] != null) c["icons"].forEach((i) => {
             var img = document.createElement("img");
             img.src=i;
             img.classList.add("icon");
