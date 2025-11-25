@@ -118,8 +118,8 @@ class APItwitchTest(APItwitch):
     async def connect(self):
         """Override parent API connection and start background test"""
         print("Not Connecting to twitch")
-        self.delay_callback("fake_data", 1000, self.process)
-        self.delay_callback("log_replay", 1000, self.log_replay)
+        #self.delay_callback("fake_data", 1000, self.process)
+        #self.delay_callback("log_replay", 1000, self.log_replay)
         return
 
 

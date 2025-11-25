@@ -114,7 +114,7 @@ class APIhttp(APIbase):
         if major:
             self.nav[name]=uri
 
-        self.app.add_url_rule(uri,name, callback)
+        self.app.add_url_rule(uri,name, callback,methods=["GET","POST"])
 
     async def poll_check(self):
         # If there are self.poll_threshold identical messages in self.poll start poll and add
@@ -450,11 +450,15 @@ class APIhttp(APIbase):
         """Output message to CLI for chat"""
         
         # Add to host API data
+        print("Received message")
         if len(self.api_chat) > 30:
             self.api_chat.pop(0)
 
         if "html" in data:
             data["text"] = data["html"]
+
+        if "icons" not in data:
+            data["icons"] = []
 
         self.api_chat.append(
                 {
@@ -466,8 +470,10 @@ class APIhttp(APIbase):
                     "donate":data["donate"]
                 }
             )
+        print("Added to chat")
         with open(self.json_api_chat, 'w', encoding="utf-8") as output:
             output.write(json.dumps(self.api_chat))
+            print("written to JSON")
 
         # Web display data
         if "clean" in data and data["clean"] == True:
