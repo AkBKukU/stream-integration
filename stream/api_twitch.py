@@ -36,6 +36,7 @@ class APItwitch(APIbase):
         self.service_name = "Twitch"
         self.auth_token = auth_token
         self.buffer_subs = []
+        self.sub_skip = {}
         self.sub_coalesce_delay = 500
         
 
@@ -335,19 +336,27 @@ class APItwitch(APIbase):
         sub_types = ["sub","resub","community_sub_gift","gift_paid_upgrade","prime_paid_upgrade","pay_it_forward","sub_gift"]
 
         if data.event.notice_type in sub_types:
+            # Valid sub type
+            if data.event.notice_type == "community_sub_gift":
+                self.sub_skip[data.event.chatter_user_name]+=data.event["community_sub_gift"]["total"]
+                data.event[data.event.notice_type][sub_tier]=int(data.event[data.event.notice_type][sub_tier])*int(data.event["community_sub_gift"]["total"]),
+
+            if data.event.notice_type == "sub_gift" and self.sub_skip[data.event.chatter_user_name] > 0:
+                self.sub_skip[data.event.chatter_user_name]-=1
+                return
 
             if data.event.message.text != "":
                 self.emit_donate({
                     "from_name":data.event.chatter_user_name,
                     "uid":"twitch-"+data.event.chatter_user_id,
-                    "amount":str(1)+"s",
+                    "amount":str(data.event[data.event.notice_type][sub_tier])+"s",
                     "message":data.event.system_message + " and says " +data.event.message.text
                     })
             else:
                 self.emit_donate({
                     "from_name":data.event.chatter_user_name,
                     "uid":"twitch-"+data.event.chatter_user_id,
-                    "amount":str(1)+"s",
+                    "amount":str(data.event[data.event.notice_type][sub_tier])+"s",
                     "message":data.event.system_message
                     })
 

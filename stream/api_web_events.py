@@ -138,6 +138,7 @@ function donate(event) {{
                 # Send data to receivers
                 self.emit_donate({
                     "from_name":data["donate_name"],
+                    "uid": "test-1337",
                     "amount":str(data["donate_amount"])+"s",
                     "message":data["donate_input"]
                     })
