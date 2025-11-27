@@ -47,13 +47,7 @@ class APIserver(APIbase):
                     if len(self.api_chat) > self.api_buffer:
                         self.api_chat.pop(0)
                     self.api_chat.append(data[i])
-                    message={
-                        "from": data[i]["from"],
-                        "color": data[i]["color"],
-                        "text": data[i]["text"],
-                        "donate": data[i]["donate"]
-                    }
-                    self.emit_chat(message)
+                    self.emit_chat(data[i])
 
 
             self.delay_callback("get_chat", self.update_rate, self.get_chat)
@@ -79,11 +73,7 @@ class APIserver(APIbase):
                         self.api_donate.pop(0)
                     self.api_donate.append(data[i])
 
-                    self.emit_donate({
-                        "from_name":data[i]['from'],
-                        "amount":str(data[i]['amount']),
-                        "message":data[i]['text']
-                        })
+                    self.emit_donate(data[i])
 
 
             self.delay_callback("get_donate", self.update_rate, self.get_donate)
@@ -111,11 +101,7 @@ class APIserver(APIbase):
                         self.api_interact.pop(0)
                     self.api_interact.append(data[i])
 
-                    self.emit_interact({
-                        "from_name":data[i]['from'],
-                        "kind":data[i]['kind'],
-                        "message":data[i]['text']
-                        })
+                    self.emit_interact(data[i])
 
 
             self.delay_callback("get_interact", self.update_rate, self.get_interact)

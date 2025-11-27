@@ -161,6 +161,7 @@ class APItwitch(APIbase):
             # Send data to receivers
             self.emit_donate({
                 "from_name":message['from'],
+                "uid": "twitch-"+str(chat.user.id),
                 "amount":str(chat.bits)+"b",
                 "message":message['text']
                 })
@@ -170,6 +171,7 @@ class APItwitch(APIbase):
             if message["text"][0:1] == "!":
                 self.emit_interact({
                     "from_name":chat.user.display_name,
+                    "uid": "twitch-"+str(chat.user.id),
                     "kind":"Mod Chat Command",
                     "message":message["text"]
                     })
@@ -307,6 +309,7 @@ class APItwitch(APIbase):
         # Send data to receivers
         self.emit_interact({
             "from_name":data.event.user_name,
+            "uid":"twitch-"+data.event.user_id,
             "kind":data.event.reward.title,
             "message":""+str(data.event.user_input)
             })
@@ -336,12 +339,14 @@ class APItwitch(APIbase):
             if data.event.message.text != "":
                 self.emit_donate({
                     "from_name":data.event.chatter_user_name,
+                    "uid":"twitch-"+data.event.chatter_user_id,
                     "amount":str(1)+"s",
                     "message":data.event.system_message + " and says " +data.event.message.text
                     })
             else:
                 self.emit_donate({
                     "from_name":data.event.chatter_user_name,
+                    "uid":"twitch-"+data.event.chatter_user_id,
                     "amount":str(1)+"s",
                     "message":data.event.system_message
                     })
@@ -353,12 +358,14 @@ class APItwitch(APIbase):
             if data.event.message.text != "":
                 self.emit_donate({
                     "from_name":data.event.chatter_user_name,
+                    "uid":"twitch-"+data.event.chatter_user_id,
                     "amount":str(1)+"s",
                     "message":data.event.message.text
                     })
             else:
                 self.emit_donate({
                     "from_name":data.event.chatter_user_name,
+                    "uid":"twitch-"+data.event.chatter_user_id,
                     "amount":str(1)+"s",
                     "message":data.event.system_message
                     })

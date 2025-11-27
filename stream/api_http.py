@@ -399,14 +399,8 @@ class APIhttp(APIbase):
             if len(self.api_donate) > 30:
                 self.api_donate.pop(0)
 
-            self.api_donate.append(
-                    {
-                        "timestamp":datetime.now().isoformat().replace(":","-"),
-                        "from":data["from_name"],
-                        "amount":data["amount"],
-                        "text":data["message"]
-                    }
-                )
+            data["timestamp"]=datetime.now().isoformat().replace(":","-")
+            self.api_donate.append(data)
             with open(self.json_api_donate, 'w', encoding="utf-8") as output:
                 output.write(json.dumps(self.api_donate))
 
@@ -458,16 +452,8 @@ class APIhttp(APIbase):
         if "icons" not in data:
             data["icons"] = []
 
-        self.api_chat.append(
-                {
-                    "timestamp":datetime.now().isoformat().replace(":","-"),
-                    "from":data["from"],
-                    "text":data["text"],
-                    "color":data["color"],
-                    "icons":data["icons"],
-                    "donate":data["donate"]
-                }
-            )
+        data["timestamp"]=datetime.now().isoformat().replace(":","-")
+        self.api_chat.append(data)
         print("Added to chat")
         with open(self.json_api_chat, 'w', encoding="utf-8") as output:
             output.write(json.dumps(self.api_chat))
@@ -489,19 +475,13 @@ class APIhttp(APIbase):
             output.write(json.dumps(self.chat))
         return
 
-    def receive_interact(self,from_name,kind,message):
+    def receive_interact(self,data):
         # Add to host API data
         if len(self.api_interact) > 30:
             self.api_interact.pop(0)
 
-        self.api_interact.append(
-                {
-                    "timestamp":datetime.now().isoformat().replace(":","-"),
-                    "from":data["from_name"],
-                    "kind":data["kind"],
-                    "text":data["message"]
-                }
-            )
+        data["timestamp"]=datetime.now().isoformat().replace(":","-")
+        self.api_interact.append(data)
         with open(self.json_api_interact, 'w', encoding="utf-8") as output:
             output.write(json.dumps(self.api_interact))
 

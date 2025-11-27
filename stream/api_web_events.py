@@ -126,6 +126,7 @@ function donate(event) {{
             if data["type"]=="interact":
                 self.emit_interact({
                     "from_name":"Tester",
+                    "uid":"test-1337",
                     "kind":data["interact_name"],
                     "message":data["interact_input"]
                     })

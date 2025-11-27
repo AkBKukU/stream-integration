@@ -279,6 +279,7 @@ class APIyoutube(APIbase):
                 # Send data to receivers
                 self.emit_donate({
                     "from_name":name,
+                    "uid": "youtube-"+c['authorDetails']['channelId'],
                     "amount":str(value)+"b", # Youtube UI enforces min already
                     "message":c['snippet']['superChatDetails']['userComment']
                     })
