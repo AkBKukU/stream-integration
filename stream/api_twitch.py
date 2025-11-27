@@ -153,6 +153,7 @@ class APItwitch(APIbase):
         chat_data["user"]["name"] = chat.user.name
         chat_data["user"]["display_name"] = chat.user.display_name
         chat_data["user"]["mod"] = chat.user.mod
+        chat_data["user"]["id"] = chat.user.id
         chat_data["user"]["icons"] = self.badge_prep(chat.user.badges)
         self.log("callback_chat_data",json.dumps(chat_data))
         if chat.user.color == None:
@@ -171,6 +172,7 @@ class APItwitch(APIbase):
                 "text": chat.text,
                 "html": self.message_prep(chat),
                 "donate": chat.bits,
+                "uid": "twitch-"+str(chat.user.id),
                 "icons": self.badge_prep(chat.user.badges),
                 "clean": True
             }

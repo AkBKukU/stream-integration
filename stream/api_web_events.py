@@ -39,8 +39,8 @@ function chat(event) {{
 }};
 
 function interact(event) {{
-    interact_name=document.getElementById('chat_name').value;
-    interact_input=document.getElementById('chat_input').value;
+    interact_name=document.getElementById('interact_name').value;
+    interact_input=document.getElementById('interact_input').value;
 	fetch("/test/", {{
 		method: 'post',
 	   headers: {{
@@ -117,6 +117,7 @@ function donate(event) {{
                         "text": data["chat_input"],
                         "donate": 0,
                         "icons": [],
+                        "uid": "test-1337",
                         "clean": True
                     }
                 self.emit_chat(message)
@@ -124,6 +125,7 @@ function donate(event) {{
 
             if data["type"]=="interact":
                 self.emit_interact("Tester",data["interact_name"],data["interact_input"])
+                print( f"interact_name: {data["interact_name"]}, interact_input: {data["interact_input"]}")
                 return f"interact_name: {data["interact_name"]}, interact_input: {data["interact_input"]}"
 
 
