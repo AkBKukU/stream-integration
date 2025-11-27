@@ -37,31 +37,26 @@ class OUTKAT(APIbase):
         keyat.send(data["from"]+": "+data["text"]+"\n")
         return
 
-    def receive_donate(self,from_name,amount,message):
-        """Output message to CLI for donate"""
-        keyat.send(from_name+" gave "+amount+" and said "+message)
-        return
-
-    def receive_interact(self,from_name,kind,message):
+    def receive_interact(self,data):
         """Output message to CLI for interaction"""
         keyat = KAT(self.serial_port)
-        if kind == "Send Command" or kind == "Poll Results":
+        if data["kind"] == "Send Command" or data["kind"] == "Poll Results":
 
-            message = message.encode("ascii",errors="ignore").decode()
-            message = re.sub('\\bq\\b', '', message)
-            message = message.replace('~', '')
-            message = message.replace('^', '')
-            message = message.strip()
-            message = message.lower()
-            if message in self.banned:
+            data["message"] = data["message"].encode("ascii",errors="ignore").decode()
+            data["message"] = re.sub('\\bq\\b', '', data["message"])
+            data["message"] = data["message"].replace('~', '')
+            data["message"] = data["message"].replace('^', '')
+            data["message"] = data["message"].strip()
+            data["message"] = data["message"].lower()
+            if data["message"] in self.banned:
                 return
 
             for bad in self.remove:
-                if bad in message:
+                if bad in data["message"]:
                     return
-            keyat.send(message[:32]+"\n")
-            print("Command (from [" +from_name+ "]): " + message[:32])
-        if kind == "Status Command":
+            keyat.send(data["message"][:32]+"\n")
+            print("Command (from [" +data["from_name"]+ "]): " + data["message"][:32])
+        if data["kind"] == "Status Command":
             keyat.send("i"+"\n")
             time.sleep(3)
             keyat.send("diagnose"+"\n")
@@ -73,19 +68,19 @@ class OUTKAT(APIbase):
 
 
 
-    def receive_donate(self,from_name,amount,message,benefits=None):
+    def receive_donate(self,data):
         """Respond to bit and sub messages"""
 
-        message = message.strip()
-        message = message.lower()
+        data["message"] = data["message"].strip()
+        data["message"] = data["message"].lower()
 
         # Bits
-        if amount.endswith("b"):
-            amount = amount.replace("b","")
+        if data["amount"].endswith("b"):
+            data["amount"] = data["amount"].replace("b","")
 
-            if int(amount) == 25:
-                print("Maybe Restart: " + message)
-                if "restart" in message:
+            if int(data["amount"]) == 25:
+                print("Maybe Restart: " + data["message"])
+                if "restart" in data["message"]:
                     keyat = KAT(self.serial_port)
                     keyat.send("restart\nY\n")
                     return

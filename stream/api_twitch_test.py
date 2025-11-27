@@ -105,6 +105,7 @@ class APItwitchTest(APItwitch):
         # Build chat message
         message={
                 "from": self.fake_names[0]["from"],
+                "uid": "twitchtest-"+self.fake_names[0]["from"],
                 "color": color,
                 "text": self.fake_votes[0]+"",
                 "time": str(datetime.now().isoformat()).replace(":","-"),

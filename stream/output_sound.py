@@ -12,9 +12,9 @@ class OUTSound(OUTBase):
         super().__init__()
         self.actions["play_file"]=self.action_play_file
 
-    def receive_interact(self,from_name,kind,message):
+    def receive_interact(self,data):
         """Output message to CLI for interaction"""
-        if kind == "Edit Mark":
+        if data["kind"] == "Edit Mark":
             print("BEEEEEEEEEEEEEEEEEEEEEEEEEEEP")
             playsound("stream/sound/440Hz-30s.wav",False)
         return

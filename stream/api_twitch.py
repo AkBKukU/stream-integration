@@ -77,11 +77,7 @@ class APItwitch(APIbase):
 
         # Register callbacks for pubsub actions
         self.uuid_points = await self.eventsub.listen_channel_points_custom_reward_redemption_add(self.user.id, self.callback_channel_points_custom_reward_redemption_add)
-        #self.uuid_points = await self.eventsub.listen_channel_subscribe(self.user.id, self.callback_channel_subscribe)
-        #self.uuid_points = await self.eventsub.listen_channel_subscription_gift(self.user.id, self.callback_subscription_gift)
         self.uuid_notification = await self.eventsub.listen_channel_chat_notification(self.user.id, self.user.id, self.callback_channel_chat_notification)
-        #self.uuid_bits = await self.pubsub.listen_bits(self.user.id, self.callback_bits)
-        #self.uuid_subs = await self.pubsub.listen_channel_subscriptions(self.user.id, self.callback_subs)
 
 
         self.chat.register_event(ChatEvent.MESSAGE, self.callback_chat)
@@ -124,22 +120,6 @@ class APItwitch(APIbase):
         await self.cancel_delays()
         return
 
-    async def callback_points(self, uuid: UUID, data: dict):
-        """Point redeem handler"""
-        self.log("callback_points",json.dumps(data))
-
-        # Validate user provided text
-        if 'user_input' in data['data']['redemption']:
-            text=str(""+str(data['data']['redemption']['user_input']))
-        else:
-            text=""
-
-        # Send data to receivers
-        self.emit_interact(data['data']['redemption']['user']['display_name'],
-                            data['data']['redemption']['reward']['title'],
-                            text
-                            )
-        return
 
     async def callback_chat(self, chat: ChatMessage):
 
@@ -179,31 +159,21 @@ class APItwitch(APIbase):
 
         if chat.bits > 0:
             # Send data to receivers
-            self.emit_donate(message['from'],
-                                str(chat.bits)+"b",
-                                message['text']
-                                )
+            self.emit_donate({
+                "from_name":message['from'],
+                "amount":str(chat.bits)+"b",
+                "message":message['text']
+                })
 
         if chat.user.mod or chat.user.display_name == "TechTangents":
             print("Mod chat: "+message["text"][0:1])
             if message["text"][0:1] == "!":
-                self.emit_interact(chat.user.display_name,
-                                    "Mod Chat Command",
-                                    message["text"]
-                                    )
+                self.emit_interact({
+                    "from_name":chat.user.display_name,
+                    "kind":"Mod Chat Command",
+                    "message":message["text"]
+                    })
         self.emit_chat(message)
-        return
-
-
-    async def callback_bits(self, uuid: UUID, data: dict):
-        """Bit cheer handler"""
-        self.log("callback_bits",json.dumps(data))
-
-        # Send data to receivers
-        self.emit_donate(data['data']['user_name'],
-                            str(data['data']['bits_used'])+"b",
-                            data['data']['chat_message']
-                            )
         return
 
 
@@ -335,10 +305,11 @@ class APItwitch(APIbase):
 
 
         # Send data to receivers
-        self.emit_interact(data.event.user_name,
-                            data.event.reward.title,
-                            ""+str(data.event.user_input)
-                            )
+        self.emit_interact({
+            "from_name":data.event.user_name,
+            "kind":data.event.reward.title,
+            "message":""+str(data.event.user_input)
+            })
 
         # self.emit_donate(data.event.user_name,
         #                     str(data.event.tier)+"s",
@@ -363,30 +334,34 @@ class APItwitch(APIbase):
         if data.event.notice_type in sub_types:
 
             if data.event.message.text != "":
-                self.emit_donate(data.event.chatter_user_name,
-                             str(1)+"s",
-                             data.event.system_message + " and says " +data.event.message.text
-                             )
+                self.emit_donate({
+                    "from_name":data.event.chatter_user_name,
+                    "amount":str(1)+"s",
+                    "message":data.event.system_message + " and says " +data.event.message.text
+                    })
             else:
-                self.emit_donate(data.event.chatter_user_name,
-                             str(1)+"s",
-                             data.event.system_message
-                             )
+                self.emit_donate({
+                    "from_name":data.event.chatter_user_name,
+                    "amount":str(1)+"s",
+                    "message":data.event.system_message
+                    })
 
         announce_types = ["announcement","raid"]
 
         if data.event.notice_type in announce_types:
 
             if data.event.message.text != "":
-                self.emit_donate(data.event.chatter_user_name,
-                             str(1)+"s",
-                             data.event.message.text
-                             )
+                self.emit_donate({
+                    "from_name":data.event.chatter_user_name,
+                    "amount":str(1)+"s",
+                    "message":data.event.message.text
+                    })
             else:
-                self.emit_donate(data.event.chatter_user_name,
-                             str(1)+"s",
-                             data.event.system_message
-                             )
+                self.emit_donate({
+                    "from_name":data.event.chatter_user_name,
+                    "amount":str(1)+"s",
+                    "message":data.event.system_message
+                    })
 
 
     async def callback_flush_subs(self):
@@ -449,9 +424,10 @@ class APItwitch(APIbase):
 
         # Send data to receivers
         print("emitting sub")
-        self.emit_donate(data['user_name'],
-                            str(data['sub_plan'])+"s",
-                            line
-                            )
+        self.emit_donate({
+            "from_name":data['user_name'],
+            "amount":str(data['sub_plan'])+"s",
+            "message":line
+            })
         return
 

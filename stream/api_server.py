@@ -79,10 +79,11 @@ class APIserver(APIbase):
                         self.api_donate.pop(0)
                     self.api_donate.append(data[i])
 
-                    self.emit_donate(data[i]['from'],
-                        str(data[i]['amount']),
-                        data[i]['text']
-                        )
+                    self.emit_donate({
+                        "from_name":data[i]['from'],
+                        "amount":str(data[i]['amount']),
+                        "message":data[i]['text']
+                        })
 
 
             self.delay_callback("get_donate", self.update_rate, self.get_donate)
@@ -110,10 +111,11 @@ class APIserver(APIbase):
                         self.api_interact.pop(0)
                     self.api_interact.append(data[i])
 
-                    self.emit_interact(data[i]['from'],
-                        data[i]['kind'],
-                        data[i]['text']
-                        )
+                    self.emit_interact({
+                        "from_name":data[i]['from'],
+                        "kind":data[i]['kind'],
+                        "message":data[i]['text']
+                        })
 
 
             self.delay_callback("get_interact", self.update_rate, self.get_interact)

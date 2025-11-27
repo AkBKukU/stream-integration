@@ -131,39 +131,39 @@ class OUTDectalk(OUTBase):
         with open("decktalk_replace.json", 'w', encoding="utf-8") as output:
             output.write(json.dumps(data, indent=4))
 
-    def receive_donate(self,from_name,amount,message,benefits=None):
+    def receive_donate(self,data):
         """Respond to bit and sub messages"""
 
         # Bits
-        if amount.endswith("b"):
-            amount = amount.replace("b","")
+        if data["amount"].endswith("b"):
+            data["amount"] = data["amount"].replace("b","")
             # Set minimum donation at 100 bits to trigger DECTalk
-            if int(amount) < 100:
+            if int(data["amount"]) < 100:
                 return
 
             # Send nessage
-            self.write(from_name+" says "+message)
+            self.write(data["from_name"]+" says "+data["message"])
 
         # Subs
-        if amount.endswith("s"):
+        if data["amount"].endswith("s"):
             # Send nessage
-            self.write(message)
+            self.write(data["message"])
         return
 
-    def receive_interact(self,from_name,kind,message):
+    def receive_interact(self,data):
         """Respond to interactions"""
 
-        if kind == "API Test":
-            self.write(from_name+" did "+kind+" and said "+message)
+        if data["kind"] == "API Test":
+            self.write(data["from_name"]+" did "+data["kind"]+" and said "+data["message"])
             #self.add_replace(from_name,message)
 
-        if kind == "Hello, my name is":
-            self.write("Henceforth "+from_name+" shall now be known as "+message)
-            self.add_replace(from_name,message)
+        if data["kind"] == "Hello, my name is":
+            self.write("Henceforth "+data["from_name"]+" shall now be known as "+data["message"])
+            self.add_replace(from_name,data["message"])
 
-        if kind == "Name Purge":
-            self.write(message+"'s name has been deemed unacceptable.")
-            self.remove_replace(message)
+        if data["kind"] == "Name Purge":
+            self.write(data["message"]+"'s name has been deemed unacceptable.")
+            self.remove_replace(data["message"])
         return
 
 

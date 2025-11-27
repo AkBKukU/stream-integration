@@ -50,9 +50,9 @@ class OUTCall(OUTBase):
 
         return
 
-    def receive_interact(self,from_name,kind,message):
+    def receive_interact(self,data):
         """Output message to CLI for interaction"""
         if kind == "Call Me!":
-            self.write(from_name + " said " + message)
+            self.write(data["from_name"] + " said " + data["message"])
             self.call()
         return

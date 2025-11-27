@@ -166,16 +166,16 @@ class APIbase(APIKey):
         return
 
 
-    def emit_donate(self,from_name,amount,message):
+    def emit_donate(self,data):
         """Call stored receivers for donation"""
         for callback in self.callbacks_donate:
-            callback(from_name,amount,message)
+            callback(data)
         return
 
 
-    def receive_donate(self,from_name,amount,message):
+    def receive_donate(self,data):
         """Output message to CLI for donate"""
-        print(from_name+" gave "+amount+" and said "+message)
+        print(data["from_name"]+" gave "+data["amount"]+" and said "+data["message"])
         return
 
 
@@ -188,16 +188,16 @@ class APIbase(APIKey):
         return
 
 
-    def emit_interact(self,from_name,kind,message):
+    def emit_interact(self,data):
         """Call stored receivers for interaction"""
         for callback in self.callbacks_interact:
-            callback(from_name,kind,message)
+            callback(data)
         return
 
 
-    def receive_interact(self,from_name,kind,message):
+    def receive_interact(self,data):
         """Output message to CLI for interaction"""
-        print(from_name+" did "+kind+" and said "+message)
+        print(data["from_name"]+" did "+data["kind"]+" and said "+data["message"])
         return
 
 

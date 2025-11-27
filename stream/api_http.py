@@ -156,12 +156,17 @@ class APIhttp(APIbase):
 
                 win = max(poll_count, key=poll_count.get)
                 # Send data to receivers
-                self.emit_interact("api",
-                    "Poll Results",
-                    win
-                    )
+                self.emit_interact({
+                    "from_name": "api",
+                    "kind": "Poll Results",
+                    "message": win
+                    })
 
-                self.receive_donate("api","1s","Poll Over ["+win+"] Wins")
+                self.receive_donate({
+                    "from_name": "api",
+                    "amount": "1s",
+                    "message": "Poll Over ["+win+"] Wins"
+                    })
                 return
 
             # Valid poll started, display with html
@@ -283,13 +288,6 @@ class APIhttp(APIbase):
 
         return nav_html
 
-        return """
-<a href="/chat/"><h2>Chat</h2></a>
-<a href="/read/"><h2>Read</h2></a>
-<a href="/window/"><h2>Window</h2></a>
-<a href="/dono/"><h2>Dono List</h2></a>
-        """
-
     def dono(self):
         """ Simple class function to send HTML to browser """
         return send_file("stream/http/dono-list.html")
@@ -393,33 +391,33 @@ class APIhttp(APIbase):
         else:
             return send_file("stream/http/blank")
 
-    def receive_donate(self,from_name,amount,message,benefits=None):
+    def receive_donate(self,data):
         """Output message to CLI for chat"""
         
         # Add to host API data
-        if (from_name != "api"):
+        if (data["from_name"] != "api"):
             if len(self.api_donate) > 30:
                 self.api_donate.pop(0)
 
             self.api_donate.append(
                     {
                         "timestamp":datetime.now().isoformat().replace(":","-"),
-                        "from":from_name,
-                        "amount":amount, 
-                        "text":message
+                        "from":data["from_name"],
+                        "amount":data["amount"],
+                        "text":data["message"]
                     }
                 )
             with open(self.json_api_donate, 'w', encoding="utf-8") as output:
                 output.write(json.dumps(self.api_donate))
 
         # Handle web display
-        message = bleach.clean(message,tags={})
+        data["message"] = bleach.clean(data["message"],tags={})
 
-        print ("something Recieved: "+amount)
+        print ("something Recieved: "+data["amount"])
         # Subs
-        if amount.endswith("b"):
+        if data["amount"].endswith("b"):
             # No action on bits
-            self.donateall.append({"timestamp":str(datetime.now().isoformat()).replace(":","-"),"from":from_name, "text":message})
+            self.donateall.append({"timestamp":str(datetime.now().isoformat()).replace(":","-"),"from":data["from_name"], "text":data["message"]})
 
             if len(self.donateall) > 50:
                 self.donateall.pop(0)
@@ -430,8 +428,8 @@ class APIhttp(APIbase):
 
         print ("HTTP Sub Recieved")
 
-        self.subs.append({"timestamp":str(datetime.now().isoformat()).replace(":","-"),"from":from_name, "text":message})
-        self.donateall.append({"timestamp":str(datetime.now().isoformat()).replace(":","-"),"from":from_name, "text":message})
+        self.subs.append({"timestamp":str(datetime.now().isoformat()).replace(":","-"),"from":data["from_name"], "text":data["message"]})
+        self.donateall.append({"timestamp":str(datetime.now().isoformat()).replace(":","-"),"from":data["from_name"], "text":data["message"]})
 
         if len(self.subs) > 30:
             self.subs.pop(0)
@@ -499,9 +497,9 @@ class APIhttp(APIbase):
         self.api_interact.append(
                 {
                     "timestamp":datetime.now().isoformat().replace(":","-"),
-                    "from":from_name,
-                    "kind":kind,
-                    "text":message
+                    "from":data["from_name"],
+                    "kind":data["kind"],
+                    "text":data["message"]
                 }
             )
         with open(self.json_api_interact, 'w', encoding="utf-8") as output:
@@ -509,7 +507,7 @@ class APIhttp(APIbase):
 
 
 
-        if kind == "Mod Chat Command":
-            if message.find("!poll") == 0:
-                self.poll_config(message.lower().replace("!poll","").strip())
-                print("Poll title change: "+message)
+        if data["kind"] == "Mod Chat Command":
+            if data["message"].find("!poll") == 0:
+                self.poll_config(data["message"].lower().replace("!poll","").strip())
+                print("Poll title change: "+data["message"])

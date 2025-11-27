@@ -15,12 +15,12 @@ class OUTFestival(OUTBase):
     def __init__(self):
         self.service_name = "Festival"
 
-    def receive_donate(self,from_name,amount,message):
+    def receive_donate(self,data):
         """Output message as audio for donate"""
-        festival.sayText(from_name+" gave "+amount+" and said "+message)
+        festival.sayText(data["from_name"]+" gave "+data["amount"]+" and said "+data["message"])
         return
 
-    def receive_interact(self,from_name,kind,message):
+    def receive_interact(self,data):
         """Output message as audio for interaction"""
-        festival.sayText(from_name+" gave "+kind+" and said "+message)
+        festival.sayText(data["from_name"]+" did "+data["kind"]+" and said "+data["message"])
         return

@@ -41,50 +41,50 @@ class APIfootpedal(APIbase):
             if not self.left and (r[0] & 0b1) > 0:
                 print("Left Pressed")
                 # Send data to receivers
-                self.emit_interact(
-                            "left",
-                            "",
-                            "press"
-                            )
+                self.emit_interact({
+                            "from_name": "left",
+                            "kind": "",
+                            "message": "press"
+                            })
             elif self.left and (r[0] & 0b1) == 0:
                 print("Left released")
-                self.emit_interact(
-                            "left",
-                            "",
-                            "release"
-                            )
+                self.emit_interact({
+                            "from_name": "left",
+                            "kind": "",
+                            "message": "release"
+                            })
             self.left = (r[0] & 0b1) == 1;
 
             if not self.center and (r[0] & 2) > 0:
                 print("center Pressed")
-                self.emit_interact(
-                            "center",
-                            "",
-                            "press"
-                            )
+                self.emit_interact({
+                            "from_name": "center",
+                            "kind": "",
+                            "message": "press"
+                            })
             elif self.center and (r[0] & 2) == 0:
                 print("center released")
-                self.emit_interact(
-                            "center",
-                            "",
-                            "release"
-                            )
+                self.emit_interact({
+                            "from_name": "center",
+                            "kind": "",
+                            "message": "release"
+                            })
             self.center = (r[0] & 2) == 2;
 
             if not self.right and (r[0] & 4) > 0:
                 print("right Pressed")
-                self.emit_interact(
-                            "right",
-                            "",
-                            "press"
-                            )
+                self.emit_interact({
+                            "from_name": "right",
+                            "kind": "",
+                            "message": "press"
+                            })
             elif self.right and (r[0] & 4) == 0:
                 print("right released")
-                self.emit_interact(
-                            "right",
-                            "",
-                            "release"
-                            )
+                self.emit_interact({
+                            "from_name": "right",
+                            "kind": "",
+                            "message": "release"
+                            })
             self.right = (r[0] & 4) == 4;
 
             await self.cancel_delay("check_input")

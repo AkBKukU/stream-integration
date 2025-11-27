@@ -243,6 +243,7 @@ class APIyoutube(APIbase):
 
             print("chat:")
             #print(pprint(c))
+            c['authorDetails']['displayName']=c['authorDetails']['displayName'].replace("@","")
             # Create random colors from names
             color="#"
             letters=str(c['authorDetails']['displayName']).lower()[:3]
@@ -254,6 +255,7 @@ class APIyoutube(APIbase):
 
             message={
                     "from": c['authorDetails']['displayName'].encode('utf-8',errors='ignore').decode('utf-8'),
+                    "uid": "youtube-"+c['authorDetails']['channelId'],
                     "color": color,
                     "text": str(c['snippet']['displayMessage']),
                     "donate": 0 # not currently used
@@ -275,7 +277,8 @@ class APIyoutube(APIbase):
                 name += " gave " + str(value) + " " + Currency(c['snippet']['superChatDetails']['currency']).currency_name + " and "
 
                 # Send data to receivers
-                self.emit_donate(name,
-                                    str(100)+"b", # Youtube UI enforces min already
-                                    c['snippet']['superChatDetails']['userComment']
-                                    )
+                self.emit_donate({
+                    "from_name":name,
+                    "amount":str(value)+"b", # Youtube UI enforces min already
+                    "message":c['snippet']['superChatDetails']['userComment']
+                    })

@@ -124,17 +124,22 @@ function donate(event) {{
                 return f"Name: {data["chat_name"]}, text: {data["chat_input"]}"
 
             if data["type"]=="interact":
-                self.emit_interact("Tester",data["interact_name"],data["interact_input"])
+                self.emit_interact({
+                    "from_name":"Tester",
+                    "kind":data["interact_name"],
+                    "message":data["interact_input"]
+                    })
                 print( f"interact_name: {data["interact_name"]}, interact_input: {data["interact_input"]}")
                 return f"interact_name: {data["interact_name"]}, interact_input: {data["interact_input"]}"
 
 
             if data["type"]=="donate":
                 # Send data to receivers
-                self.emit_donate(data["donate_name"],
-                                    str(data["donate_amount"])+"s",
-                                    data["donate_input"]
-                                    )
+                self.emit_donate({
+                    "from_name":data["donate_name"],
+                    "amount":str(data["donate_amount"])+"s",
+                    "message":data["donate_input"]
+                    })
                 return f"interact_name: {data["interact_name"]}, interact_input: {data["interact_input"]}"
 
         except Exception as e:
