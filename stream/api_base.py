@@ -147,9 +147,10 @@ class APIbase(APIKey):
 
     def emit_chat(self,data):
         """Call stored receivers for chat"""
+        response=[]
         for callback in self.callbacks_chat:
-            callback(data)
-        return
+            response.append(callback(data))
+        return response
 
 
     def receive_chat(self,data):

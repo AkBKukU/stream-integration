@@ -176,7 +176,12 @@ class APItwitch(APIbase):
                     "kind":"Mod Chat Command",
                     "message":message["text"]
                     })
-        self.emit_chat(message)
+
+        response = self.emit_chat(message)
+        for r in response:
+            print("Iterating Response")
+            if "reply" in r:
+                await chat.reply(r["reply"])
         return
 
 
