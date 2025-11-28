@@ -343,8 +343,8 @@ class APItwitch(APIbase):
         if data.event.notice_type in sub_types:
             # Valid sub type
             if data.event.notice_type == "community_sub_gift":
-                self.sub_skip[data.event.chatter_user_name]+=data.event["community_sub_gift"]["total"]
-                data.event[data.event.notice_type][sub_tier]=int(data.event[data.event.notice_type][sub_tier])*int(data.event["community_sub_gift"]["total"]),
+                self.sub_skip[data.event.chatter_user_name]+=data.event.community_sub_gift.total
+                data.event.community_sub_gift.Sub_tier=int(data.event.community_sub_gift.sub_tier)*int(data.event.community_sub_gift.total),
 
             if data.event.notice_type == "sub_gift" and self.sub_skip[data.event.chatter_user_name] > 0:
                 self.sub_skip[data.event.chatter_user_name]-=1
@@ -354,14 +354,14 @@ class APItwitch(APIbase):
                 self.emit_donate({
                     "from_name":data.event.chatter_user_name,
                     "uid":"twitch-"+data.event.chatter_user_id,
-                    "amount":str(data.event[data.event.notice_type][sub_tier])+"s",
+                    "amount":str(1000)+"s",
                     "message":data.event.system_message + " and says " +data.event.message.text
                     })
             else:
                 self.emit_donate({
                     "from_name":data.event.chatter_user_name,
                     "uid":"twitch-"+data.event.chatter_user_id,
-                    "amount":str(data.event[data.event.notice_type][sub_tier])+"s",
+                    "amount":str(1000)+"s",
                     "message":data.event.system_message
                     })
 

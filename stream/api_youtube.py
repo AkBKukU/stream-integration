@@ -255,6 +255,7 @@ class APIyoutube(APIbase):
 
             message={
                     "from": c['authorDetails']['displayName'].encode('utf-8',errors='ignore').decode('utf-8'),
+                    "from_name": c['authorDetails']['displayName'].encode('utf-8',errors='ignore').decode('utf-8'),
                     "uid": "youtube-"+c['authorDetails']['channelId'],
                     "color": color,
                     "text": str(c['snippet']['displayMessage']),
