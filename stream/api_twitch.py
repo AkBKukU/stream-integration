@@ -343,22 +343,25 @@ class APItwitch(APIbase):
         if data.event.notice_type in sub_types:
             # Valid sub type
             if data.event.notice_type == "community_sub_gift":
-                self.sub_skip[data.event.chatter_user_name]+=data.event.community_sub_gift.total
+                if data.event.chatter_user_name in self.sub_skip:
+                    self.sub_skip[data.event.chatter_user_name]+=data.event.community_sub_gift.total
+                else:
+                    self.sub_skip[data.event.chatter_user_name]=data.event.community_sub_gift.total
                 data.event.community_sub_gift.sub_tier=int(data.event.community_sub_gift.sub_tier)*int(data.event.community_sub_gift.total),
 
             if data.event.notice_type == "sub_gift" and self.sub_skip[data.event.chatter_user_name] > 0:
                 self.sub_skip[data.event.chatter_user_name]-=1
                 return
+            if data.event.notice_type == "sub":
+                value = data.event.sub.sub_tier
+            elif data.event.notice_type == "resub":
+                value = data.event.resub.sub_tier
+            elif data.event.notice_type == "community_sub_gift":
+                value = data.event.community_sub_gift.sub_tier
+            else:
+                value = 1000
 
             if data.event.message.text != "":
-                if data.event.notice_type == "sub":
-                    value = data.event.sub.sub_tier
-                elif data.event.notice_type == "resub":
-                    value = data.event.resub.sub_tier
-                elif data.event.notice_type == "community_sub_gift":
-                    value = data.event.community_sub_gift.sub_tier
-                else:
-                    value = 1000
 
                 self.emit_donate({
                     "from_name":data.event.chatter_user_name,
