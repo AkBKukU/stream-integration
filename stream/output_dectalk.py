@@ -159,7 +159,7 @@ class OUTDectalk(OUTBase):
 
         if data["kind"] == "Hello, my name is":
             self.write("Henceforth "+data["from_name"]+" shall now be known as "+data["message"])
-            self.add_replace(from_name,data["message"])
+            self.add_replace(data["from_name"],data["message"])
 
         if data["kind"] == "Name Purge":
             self.write(data["message"]+"'s name has been deemed unacceptable.")
