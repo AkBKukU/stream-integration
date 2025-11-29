@@ -28,9 +28,9 @@ class APIhttp(APIbase):
         self.service_name = "HTTP"
 
         self.app = Flask("The Web: Now with 100% More OOP")
-        #self.app.logger.disabled = True
-        #log = logging.getLogger('werkzeug')
-        #log.disabled = True
+        self.app.logger.disabled = True
+        log = logging.getLogger('werkzeug')
+        log.disabled = True
 
         # Define routes in class to use with flask
         self.nav={}

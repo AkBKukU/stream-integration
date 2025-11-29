@@ -396,9 +396,9 @@ examples of them </p>
 
         if bid == 0:
             # Bid not provided, assume minimum to own
-            bid = ntf_value*1.2
+            bid = int(ntf_value*1.2)
 
-        if bid < ntf_value*1.2:
+        if bid < int(ntf_value*1.2):
             print(f'Bid not enough: {bid} , {ntf_value*1.2}')
             return {"status":False,"error":"Bid insufficient, at least "+str(ntf_value*1.2)+" needed"}
 
