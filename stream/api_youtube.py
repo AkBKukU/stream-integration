@@ -267,7 +267,7 @@ class APIyoutube(APIbase):
             # Handle superchats
             if str(c['snippet']['type']) == "superChatEvent" :
 
-                value = int(c['snippet']['superChatDetails']['amountMicros']) / 1000000
+                value = int(c['snippet']['superChatDetails']['amountMicros']) / 10000
 
                 # If the value is integral, convert it to an int
                 if value == int(value):
