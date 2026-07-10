@@ -264,23 +264,81 @@ class APIyoutube(APIbase):
             #self.log("callback_chat",json.dumps(message))
             self.emit_chat(message)
 
+            # Handle newSponsorEvent
+            if str(c['snippet']['type']) == "newSponsorEvent" :
+                print("Recognized new membership")
+
+                value = 1000
+                print(f'Value: {value}')
+
+                # Build name to also state donate value
+                name = c['authorDetails']['displayName'].encode('utf-8',errors='ignore').decode('utf-8').replace("@","")
+
+                # Send data to receivers
+                self.emit_donate({      
+                    "from_name":name,
+                    "uid": "youtube-"+c['authorDetails']['channelId'],
+                    "amount":str(value)+"s", # Youtube UI enforces min already
+                    "message":c['snippet']['displayMessage']
+                    })
+                print("Emitted new membership")
+
+            # Handle memberMilestoneChat
+            if str(c['snippet']['type']) == "memberMilestoneChat" :
+                print("Recognized membership milestone")
+
+                value = 1000
+                print(f'Value: {value}')
+
+                # Build name to also state donate value
+                name = c['authorDetails']['displayName'].encode('utf-8',errors='ignore').decode('utf-8').replace("@","")
+
+                # Send data to receivers
+                self.emit_donate({      
+                    "from_name":name,
+                    "uid": "youtube-"+c['authorDetails']['channelId'],
+                    "amount":str(value)+"s", # Youtube UI enforces min already
+                    "message":c['snippet']['displayMessage']
+                    })
+                print("Emitted membership miletone")
+
+
+
+            # Handle membershipGiftingEvent
+            if str(c['snippet']['type']) == "membershipGiftingEvent" :
+                print("Recognized gift membership")
+
+                value = int(c['snippet']['membershipGiftingEvent']['membershipGiftingEvent']) * 1000
+                print(f'Value: {value}')
+
+                # Build name to also state donate value
+                name = c['authorDetails']['displayName'].encode('utf-8',errors='ignore').decode('utf-8').replace("@","")
+
+                # Send data to receivers
+                self.emit_donate({      
+                    "from_name":name,
+                    "uid": "youtube-"+c['authorDetails']['channelId'],
+                    "amount":str(value)+"s", # Youtube UI enforces min already
+                    "message":c['snippet']['displayMessage']
+                    })
+                print("Emitted gift membership")
+
             # Handle superchats
             if str(c['snippet']['type']) == "superChatEvent" :
+                print("Recognized Super Chat")
 
-                value = int(c['snippet']['superChatDetails']['amountMicros']) / 10000
-
-                # If the value is integral, convert it to an int
-                if value == int(value):
-                    value = int(value)
+                value = int(int(c['snippet']['superChatDetails']['amountMicros']) / 10000)
+                print(f'Value: {value}')
 
                 # Build name to also state donate value
                 name = c['authorDetails']['displayName'].encode('utf-8',errors='ignore').decode('utf-8')
-                name += " gave " + str(value) + " " + Currency(c['snippet']['superChatDetails']['currency']).currency_name + " and "
+                #name += " gave " + str(value) + " " + Currency(c['snippet']['superChatDetails']['currency']).currency_name + " and "
 
                 # Send data to receivers
                 self.emit_donate({
                     "from_name":name,
                     "uid": "youtube-"+c['authorDetails']['channelId'],
                     "amount":str(value)+"b", # Youtube UI enforces min already
-                    "message":c['snippet']['superChatDetails']['userComment']
+                    "message":c['snippet']['displayMessage']
                     })
+                print("Emitted Superchat")
